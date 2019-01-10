@@ -18,6 +18,9 @@ export default class IndexPage extends Component {
                         <LinkComponent to="/page-2">
                             <FormattedMessage id="index.page2"/>
                         </LinkComponent>
+                        <LinkComponent to="/projekti">
+                            projekti
+                        </LinkComponent>
                     </div>
                 </LayoutComponent>
         );
