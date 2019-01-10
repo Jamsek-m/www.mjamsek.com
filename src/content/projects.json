@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "id": "rest-client",
+      "path": "/projekti/kumuluzee-rest-client",
+      "publicRepo": true,
+      "repoUrl": "",
+      "version": "1.0.1",
+      "lastUpdate": "",
+      "deployment": {
+        "type": "link",
+        "url": ""
+      },
+      "images": [
+        "/public/slika.png"
+      ],
+      "translations": {
+        "en": {
+          "name": "KumuluzEE RestClient",
+          "shortDescription": "Implementation of RestClient for KumuluzEE platform.",
+          "description": "Longer description"
+        },
+        "sl": {
+          "name": "KumuluzEE RestClient",
+          "shortDescription": "Implementacija RestClienta za platformo KumuluzEE.",
+          "description": "Daljši opis"
+        }
+      }
+    },
+    {
+      "id": "dockerhub",
+      "path": "/projekti/dockerhub",
+      "publicRepo": true,
+      "repoUrl": "",
+      "version": "1.0.2",
+      "lastUpdate": "",
+      "deployment": {
+        "type": "link",
+        "url": "https://dockerhub.mjamsek.com"
+      },
+      "images": [
+        "/public/slika.png"
+      ],
+      "translations": {
+        "en": {
+          "name": "DockerHub",
+          "shortDescription": "Application for overview of Docker images in private registry",
+          "description": "Longer description"
+        },
+        "sl": {
+          "name": "DockerHub",
+          "shortDescription": "Aplikacija za pregled Docker slik v privatnem registru",
+          "description": "Daljši opis"
+        }
+      }
+    }
+  ]
+}
