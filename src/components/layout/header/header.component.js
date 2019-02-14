@@ -30,13 +30,16 @@ export class HeaderComponent extends Component {
     }
 
     initActiveLink() {
-        const pattern = new RegExp(/(\/[a-zA-Z0-9]*)\/?\d+$/);
-        const match = pattern.exec(window.location.pathname);
-        if (match) {
-            return menuLinks.find(link => link.url === match[1]) || menuLinks[0];
-        } else {
-            return menuLinks.find(link => link.url === window.location.pathname) || menuLinks[0];
+        if (typeof window !== "undefined") {
+            const pattern = new RegExp(/(\/[a-zA-Z0-9]*)\/?\d+$/);
+            const match = pattern.exec(window.location.pathname);
+            if (match) {
+                return menuLinks.find(link => link.url === match[1]) || menuLinks[0];
+            } else {
+                return menuLinks.find(link => link.url === window.location.pathname) || menuLinks[0];
+            }
         }
+        return null;
     }
 
     changeActivePage(selectedLink) {

@@ -1,7 +1,16 @@
 import langs from "../content/languages";
+import { languagesMedia } from "../content/languages-media";
 
 
 export class LocaleService {
+
+    static getLangObjectWithMedia() {
+        const mediaLangs = langs;
+        Object.keys(langs).forEach((lang) => {
+            mediaLangs[lang].image = languagesMedia[lang].image;
+        });
+        return mediaLangs;
+    }
 
     static getCurrentLocale() {
         const foundLocale = LocaleService.__getLocale();

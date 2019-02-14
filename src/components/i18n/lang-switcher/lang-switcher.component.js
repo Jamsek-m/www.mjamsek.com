@@ -15,10 +15,12 @@ export class LangSwitcher extends Component {
         this.onHoverOut = this.onHoverOut.bind(this);
         this.onClick = this.onClick.bind(this);
 
+        this.langsWithMedia = LocaleService.getLangObjectWithMedia();
+
         const currentLocale = LocaleService.getCurrentLocale();
         this.state = {
             currentLocale: currentLocale,
-            currentLang: langs[currentLocale],
+            currentLang: this.langsWithMedia[currentLocale],
             showLangSelection: true,
         };
     }
@@ -57,10 +59,11 @@ export class LangSwitcher extends Component {
 
                 {this.state.showLangSelection ?
                     <div className="dropdown-content">
-                        {Object.keys(langs).map((lang, index) => (
+                        {Object.keys(this.langsWithMedia).map((lang, index) => (
                             <div key={index} className="lang-dropdown-item"
-                                onClick={() => this.changeLocale(langs[lang].locale)}>
-                                <img src={langs[lang].image} alt={langs[lang].locale} title={langs[lang].text}/>
+                                onClick={() => this.changeLocale(this.langsWithMedia[lang].locale)}>
+                                <img src={this.langsWithMedia[lang].image} alt={this.langsWithMedia[lang].locale}
+                                    title={this.langsWithMedia[lang].text}/>
                             </div>
                         ))}
                     </div> : null
