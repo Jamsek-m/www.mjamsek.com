@@ -1,4 +1,42 @@
+@import "../../styles/variables";
+@import "../../styles/media-mixin";
+
 * {
   margin: 0;
   padding: 0;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@include device-specific($phone) {
+  .content {
+    section {
+      width: 90%;
+    }
+  }
+}
+
+@include device-specific($tablet) {
+  .content {
+    section {
+      width: 90%;
+    }
+  }
+}
+
+@include device-specific($pc) {
+  .content {
+    section {
+      width: 60%;
+    }
+  }
+}
+

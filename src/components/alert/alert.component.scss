@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+@import "../../styles/media-mixin";
+
+.alert.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+
+  button {
+    color: #155724;
+    background-color: #d4edda;
+  }
+}
+
+.alert.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+
+  button {
+    color: #721c24;
+    background-color: #f8d7da;
+  }
+}
+
+.alert {
+  border-radius: 0.25rem;
+
+  .alert-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem 0.75rem 0.75rem;
+    margin: 0.25rem;
+
+    .alert-text {
+      display: flex;
+      align-items: center;
+    }
+
+    .alert-button {
+      display: flex;
+      align-items: center;
+
+      button {
+        border: 0;
+        cursor: pointer;
+
+        span {
+          line-height: 1;
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+}
+

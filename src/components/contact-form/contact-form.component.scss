@@ -1,0 +1,184 @@
+@import "../../styles/variables";
+@import "../../styles/media-mixin";
+
+$form_color_dark: #25349f;
+
+/* AT RUNTIME */
+.skrito {
+  display: none;
+}
+.invalid-input {
+  border-bottom: 2px solid $red_error;
+}
+.disabled-btn {
+  opacity: 0.65;
+}
+
+/* ********** */
+.forma-group {
+  input, textarea {
+    font-family: $font_verdana;
+    border: none;
+    border-bottom: 2px solid $form_color_dark;
+    background-color: transparent;
+    resize: none;
+    font-size: 18px; /* TODO: ??? */
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+.forma-submit {
+
+  button {
+    padding: 6px 12px;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    color: $form_color_dark;
+    border: 2px solid $form_color_dark;
+
+    &:hover {
+      color: white;
+      background-color: $form_color_dark;
+    }
+  }
+}
+
+.alerts {
+  margin: 20px auto;
+
+  .mailto-link {
+    // text-decoration: none;
+    color: #721c24;
+  }
+}
+
+@include device-specific($phone) {
+  .forma {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .forma-ime-area {
+      width: 100%;
+    }
+
+    .forma-group {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 5px 10px 5px 0;
+
+      input, textarea {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      textarea {
+        height: 4em;
+      }
+
+      label {
+        display: none;
+      }
+    }
+
+    .forma-ime-area {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      div {
+        width: 100%;
+      }
+    }
+
+    .forma-submit {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+
+      button {
+        width: 80%;
+      }
+    }
+    .alerts {
+      width: 100%;
+    }
+  }
+}
+
+@include device-specific($tablet) {
+  .forma {
+    width: 100%;
+
+    .forma-group {
+      display: flex;
+      flex-direction: column;
+      margin: 5px 10px 5px 0;
+    }
+
+    .forma-ime-area {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+
+      div {
+        width: 50%;
+      }
+    }
+
+    .forma-submit {
+      margin-top: 20px;
+      margin-right: 40px;
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@include device-specific($pc) {
+  .forma {
+    width: 100%;
+
+    .forma-group {
+      display: flex;
+      flex-direction: column;
+      margin: 5px 10px 5px 0;
+    }
+
+    .forma-ime-area {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+
+      div {
+        width: 50%;
+      }
+    }
+
+    .forma-submit {
+      margin-top: 20px;
+      margin-right: 40px;
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        width: 20%;
+      }
+    }
+  }
+}

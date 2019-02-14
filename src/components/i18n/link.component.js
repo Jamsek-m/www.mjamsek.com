@@ -11,6 +11,7 @@ class LinkComponent extends Component {
     static propTypes = {
         to: PropTypes.string.isRequired,
         intl: intlShape.isRequired,
+        children: PropTypes.object
     };
 
     render() {

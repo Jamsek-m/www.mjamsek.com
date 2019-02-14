@@ -1,0 +1,65 @@
+@import "../styles/variables";
+@import "../styles/media-mixin";
+
+@include device-specific($phone) {
+  .index-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+    img {
+      width: 40%;
+    }
+
+    h1 {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  h3 {
+    margin-top: 130px;
+  }
+}
+
+@include device-specific($tablet) {
+  .index-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+
+    img {
+      width: 15%;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      margin-left: 40px;
+    }
+  }
+  h3 {
+    margin-top: 130px;
+  }
+}
+
+@include device-specific($pc) {
+  .index-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+
+    img {
+      width: 10%;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      margin-left: 40px;
+    }
+  }
+  h3 {
+    margin-top: 130px;
+  }
+}
