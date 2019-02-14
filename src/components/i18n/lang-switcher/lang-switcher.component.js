@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import langs from "../../../content/languages";
 import { navigate } from "gatsby";
 import { LocaleService } from "../../../services/locale.service";
 
@@ -21,13 +20,18 @@ export class LangSwitcher extends Component {
         this.state = {
             currentLocale: currentLocale,
             currentLang: this.langsWithMedia[currentLocale],
-            showLangSelection: true,
+            showLangSelection: false,
         };
     }
 
     changeLocale(newLocale) {
         const url = LocaleService.resolveNewUrl(newLocale);
         navigate(url);
+        this.setState({
+            currentLocale: newLocale,
+            currentLang: this.langsWithMedia[newLocale],
+            showLangSelection: false,
+        });
     }
 
     onHoverIn() {
@@ -40,7 +44,7 @@ export class LangSwitcher extends Component {
     onHoverOut() {
         this.setState({
             ...this.state,
-            showLangSelection: true,
+            showLangSelection: false,
         });
     }
 
