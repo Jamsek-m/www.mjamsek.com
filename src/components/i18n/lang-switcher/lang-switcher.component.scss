@@ -1,0 +1,51 @@
+@import "../../../styles/variables";
+@import "../../../styles/media-mixin";
+
+$shadow_color: rgba(75, 75, 245, 0.3);
+
+.lang-dropdown {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.lang-dropdown > img {
+  border: $thin_border;
+}
+
+.dropdown-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  min-width: 50px;
+  right: 22px;
+  top: 25px;
+  background-color: $white;
+  z-index: 100;
+  border-radius: 3px;
+  -webkit-box-shadow: 10px 10px 60px 2px $shadow_color;
+  -moz-box-shadow: 10px 10px 60px 2px $shadow_color;
+  box-shadow: 10px 10px 60px 2px $shadow_color;
+}
+
+.lang-dropdown-item {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+
+  img {
+    margin: 5px 0 5px 0;
+    border: $thin_border;
+    border-radius: 2px;
+  }
+}
+
+.lang-dropdown-item:hover {
+  background-color: $light_grey;
+}
+
+@include device-specific($phone) {
+  .lang-dropdown {
+    margin-right: 20px;
+  }
+}

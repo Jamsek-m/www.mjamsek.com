@@ -1,10 +1,7 @@
 {
-  "header.title": "Glava",
-
-  "index.title": "Glavna stran",
-  "index.page2": "Stran 2",
-
-  "page2.title": "Stran 2",
-  "page2.para": "Paragraf",
-  "page2.index": "Nazaj na prvo stran"
+  "navbar.logo": "mJamsek",
+  "navbar.home": "Domov",
+  "navbar.projects": "Projekti",
+  "navbar.dockerhub": "DockerHub",
+  "navbar.wiki": "Wiki"
 }

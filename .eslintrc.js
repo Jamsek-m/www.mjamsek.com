@@ -4,7 +4,7 @@ module.exports = {
   rules: {
     indent: ["error", 4, {SwitchCase: 1}],
     quotes: ["error", "double"],
-    noConsole: "off",
+    "no-console": "off",
     semi: ["error", "always"]
   },
   env: {

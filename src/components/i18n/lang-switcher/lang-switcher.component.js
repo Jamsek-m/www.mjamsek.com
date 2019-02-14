@@ -1,46 +1,71 @@
 import React, { Component } from "react";
 import langs from "../../../content/languages";
 import { navigate } from "gatsby";
+import { LocaleService } from "../../../services/locale.service";
+
+import "./lang-switcher.component.scss";
 
 export class LangSwitcher extends Component {
 
     constructor(props) {
         super(props);
+
         this.changeLocale = this.changeLocale.bind(this);
-    }
+        this.onHoverIn = this.onHoverIn.bind(this);
+        this.onHoverOut = this.onHoverOut.bind(this);
+        this.onClick = this.onClick.bind(this);
 
-    resolveNewUrl(newLocale) {
-        if (typeof window !== "undefined") {
-            let url = window.location.pathname;
-            if (url.startsWith("/")) {
-                url = url.substring(1);
-            }
-            if (url.endsWith("/")) {
-                url = url.substring(0, url.length - 1);
-            }
-            const paths = url.split("/");
-
-            const foundLocale = Object.keys(langs).find(lang => langs[lang].locale === paths[0]);
-            if (foundLocale) {
-                paths.shift();
-            }
-            return `/${langs[newLocale].default ? "" : newLocale + "/"}${paths.join("/")}`;
-        }
+        const currentLocale = LocaleService.getCurrentLocale();
+        this.state = {
+            currentLocale: currentLocale,
+            currentLang: langs[currentLocale],
+            showLangSelection: true,
+        };
     }
 
     changeLocale(newLocale) {
-        const url = this.resolveNewUrl(newLocale);
+        const url = LocaleService.resolveNewUrl(newLocale);
         navigate(url);
     }
 
-    render() {
+    onHoverIn() {
+        this.setState({
+            ...this.state,
+            showLangSelection: true,
+        });
+    }
 
+    onHoverOut() {
+        this.setState({
+            ...this.state,
+            showLangSelection: true,
+        });
+    }
+
+    onClick() {
+        this.setState({
+            ...this.state,
+            showLangSelection: !this.state.showLangSelection,
+        });
+    }
+
+    render() {
         return (
-            <span>
-                {Object.keys(langs).map((lang, index) => (
-                    <button key={index} onClick={() => this.changeLocale(lang)}>{langs[lang].text}</button>
-                ))}
-            </span>
+            <div className="lang-dropdown" onMouseOver={this.onHoverIn} onMouseLeave={this.onHoverOut}>
+                <img src={this.state.currentLang.image} onClick={this.onClick}
+                    alt={this.state.currentLocale} title={this.state.currentLang.text}/>
+
+                {this.state.showLangSelection ?
+                    <div className="dropdown-content">
+                        {Object.keys(langs).map((lang, index) => (
+                            <div key={index} className="lang-dropdown-item"
+                                onClick={() => this.changeLocale(langs[lang].locale)}>
+                                <img src={langs[lang].image} alt={langs[lang].locale} title={langs[lang].text}/>
+                            </div>
+                        ))}
+                    </div> : null
+                }
+            </div>
         );
     }
 }

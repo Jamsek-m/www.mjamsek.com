@@ -8,6 +8,7 @@ import enTranslations from "../i18n/messages/en.json";
 import slTranslations from "../i18n/messages/sl.json";
 import { addLocaleData, IntlProvider } from "react-intl";
 import { HeaderComponent } from "./header/header.component";
+import { initializeIcons } from "../../content/fontawesome-icons";
 
 const messages = {
     en: enTranslations,
@@ -16,7 +17,10 @@ const messages = {
 
 addLocaleData([...enData, ...slData]);
 
+initializeIcons();
+
 import "./layout.component.scss";
+
 
 export class LayoutComponent extends Component {
 

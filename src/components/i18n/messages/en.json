@@ -1,10 +1,7 @@
 {
-  "header.title": "Header",
-
-  "index.title": "Main page",
-  "index.page2": "Page 2",
-
-  "page2.title": "Page 2",
-  "page2.para": "Paragraph",
-  "page2.index": "Back to main page"
+  "navbar.logo": "mJamsek",
+  "navbar.home": "Home",
+  "navbar.projects": "Projects",
+  "navbar.dockerhub": "DockerHub",
+  "navbar.wiki": "Wiki"
 }
