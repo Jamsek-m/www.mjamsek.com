@@ -6,14 +6,13 @@
 const languages = require("./src/content/languages");
 const data = require("./src/content/projects.json");
 const path = require("path");
-const fs = require("fs-extra");
 
 exports.onCreatePage = ({ page, actions }) => {
     const { createPage, deletePage } = actions;
 
-    if (page.path.includes("404")) {
+    /*if (page.path.includes("404")) {
         return Promise.resolve();
-    }
+    }*/
 
     return new Promise(resolve => {
         deletePage(page);
