@@ -6,6 +6,7 @@
 const languages = require("./src/content/languages");
 const data = require("./src/content/projects.json");
 const path = require("path");
+const fs = require("fs-extra");
 
 exports.onCreatePage = ({ page, actions }) => {
     const { createPage, deletePage } = actions;
@@ -35,8 +36,8 @@ exports.onCreatePage = ({ page, actions }) => {
     });
 };
 
-exports.createPages = ({actions}) => {
-    const {createPage} = actions;
+exports.createPages = ({ actions }) => {
+    const { createPage } = actions;
     const projektTemplate = path.resolve("src/templates/projekt/projekt-page.template.js");
 
     data.projects.forEach(projekt => {
@@ -49,10 +50,10 @@ exports.createPages = ({actions}) => {
                 component: projektTemplate,
                 context: {
                     locale: lang,
-                    project: projekt
-                }
+                    project: projekt,
+                },
             });
         });
 
-    })
+    });
 };

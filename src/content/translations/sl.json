@@ -1,4 +1,6 @@
 {
+  "general.btn.back": "Nazaj",
+
   "navbar.logo": "mJamsek",
   "navbar.home": "Domov",
   "navbar.projects": "Projekti",
@@ -14,6 +16,10 @@
   "index.content.current": "Trenutno delam na naslednjih projektih",
 
   "projects.title": "Projekti",
+  "projects.version": "Verzija",
+  "projects.last-update": "Zadnja sprememba",
+  "projects.repo": "Repozitorij",
+  "projects.private_repo": "Ta repozitorij je zaseben. V primeru, da potrebujete dostop, me lahko kontaktirate.",
 
   "footer.contact.title": "Kontakt",
   "footer.contact.name": "Ime",

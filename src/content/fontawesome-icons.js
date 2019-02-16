@@ -1,5 +1,13 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faArrowRight, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+    faArrowRight,
+    faBars, faChevronCircleLeft, faChevronCircleRight,
+    faChevronLeft,
+    faChevronRight,
+    faDownload,
+    faLink,
+    faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 import { faBitbucket, faGithub, faGitlab, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 
 export function initializeIcons() {
@@ -11,7 +19,13 @@ export function initializeIcons() {
         faStackOverflow,
         faBitbucket,
         faGitlab,
-        faArrowRight
+        faArrowRight,
+        faLink,
+        faDownload,
+        faChevronLeft,
+        faChevronRight,
+        faChevronCircleLeft,
+        faChevronCircleRight
     ];
     icons.forEach(icon => {
         library.add(icon);

@@ -1,4 +1,6 @@
 {
+  "general.btn.back": "Back",
+
   "navbar.logo": "mJamsek",
   "navbar.home": "Home",
   "navbar.projects": "Projects",
@@ -14,6 +16,10 @@
   "index.content.current": "Currently I am working on these projects",
 
   "projects.title": "Projects",
+  "projects.version": "Version",
+  "projects.last-update": "Last update",
+  "projects.repo": "Repository",
+  "projects.private_repo": "This repository is private. If you need access, please contact me.",
 
   "footer.contact.title": "Contact",
   "footer.contact.name": "Name",

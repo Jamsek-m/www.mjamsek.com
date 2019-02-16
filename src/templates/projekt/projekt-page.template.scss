@@ -1,0 +1,167 @@
+@import "../../styles/variables";
+@import "../../styles/media-mixin";
+
+$link_color: #5574ff;
+$deployment_area_color: #b2f5af;
+$deployment_area_color_dark: #9fdf9c;
+
+.back-btn {
+  text-decoration: none;
+  color: $link_color;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.project-page {
+  .short-desc {
+    font-style: italic;
+  }
+
+  // TODO: check all classes
+  .deployment {
+    background-color: $deployment_area_color;
+    border-radius: 5px;
+    border: 2px solid #376132;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .deployment-icon {
+      width: 20%;
+      font-size: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .deployment-meta {
+
+    }
+
+    //.deployment-item {
+    //  cursor: pointer;
+    //  text-decoration: none;
+    //  color: black;
+    //  &:hover span {
+    //    text-decoration: underline;
+    //  }
+    //}
+    //.deployment-meta {
+    //  font-style: italic;
+    //}
+  }
+
+  .project-desc {
+    a {
+      color: $link_color;
+    }
+  }
+
+}
+
+@include device-specific($phone) {
+  .back-btn {
+    font-size: 1.5rem;
+  }
+  .project-page {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pictures-area {
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+
+    .deployment-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .deployment {
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+
+        .deployment-icon {
+          font-size: 26px;
+          width: 15%;
+        }
+
+        .deployment-meta {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .project-desc {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 100%;
+    }
+  }
+}
+
+@include device-specific($tablet) {
+  .project-page {
+    margin-top: 40px;
+
+    .pictures-area {
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+
+    .deployment {
+      padding: 10px 10px 10px 10px;
+      width: 380px;
+
+      .deployment-icon {
+        font-size: 32px;
+        width: 15%;
+      }
+    }
+
+    .project-desc {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@include device-specific($pc) {
+  .project-page {
+    margin-top: 40px;
+
+    .pictures-area {
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 50px;
+    }
+
+    .deployment {
+      padding: 10px 10px 10px 10px;
+      width: 380px;
+      cursor: pointer;
+
+      .deployment-icon {
+        font-size: 32px;
+        width: 15%;
+      }
+
+      &:hover {
+        background-color: $deployment_area_color_dark;
+      }
+    }
+
+    .project-desc {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}
+

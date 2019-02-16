@@ -3,13 +3,13 @@ module.exports = {
         path: "en",
         locale: "en",
         text: "English",
-        dateFormat: "",
+        dateFormat: "DD/MM/YYYY hh:mm",
     },
     sl: {
         path: "sl",
         locale: "sl",
         text: "Slovenščina",
-        dateFormat: "",
+        dateFormat: "DD.MM.YYYY hh:mm",
         default: true,
     },
 };
