@@ -19,20 +19,25 @@ export class RepoComponent extends Component {
 
     __resolveRepoHost(repoUrl) {
         try {
-            const hostname = new URL(repoUrl).hostname;
-            const provider = gitProviders[hostname];
-            if (provider) {
-                return {
-                    name: hostname,
-                    icon: provider.icon,
-                };
+            if (typeof URL !== "undefined") {
+                const hostname = new URL(repoUrl).hostname;
+                const provider = gitProviders[hostname];
+                if (provider) {
+                    return {
+                        name: hostname,
+                        icon: provider.icon,
+                    };
+                }
             }
             return {
                 name: "VCS",
                 icon: gitProviders["default"].icon,
             };
         } catch (err) {
-            console.error(err);
+            return {
+                name: "VCS",
+                icon: gitProviders["default"].icon,
+            };
         }
     }
 
