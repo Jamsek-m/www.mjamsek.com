@@ -8,13 +8,19 @@ import {
     faLink,
     faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-import { faBitbucket, faGithub, faGitlab, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+import {
+    faBitbucket,
+    faGithub,
+    faGitlab,
+    faLinkedinIn,
+    faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
 
 export function initializeIcons() {
     const icons = [
         faBars,
         faTimes,
-        faLinkedin,
+        faLinkedinIn,
         faGithub,
         faStackOverflow,
         faBitbucket,

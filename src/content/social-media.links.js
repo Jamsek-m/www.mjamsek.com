@@ -2,7 +2,7 @@ export const socialLinks = [
     {
         label: "LinkedIn",
         url: "https://www.linkedin.com/in/mihajamsek/",
-        icon: "linkedin",
+        icon: "linkedin-in",
     },
     {
         label: "GitHub",
