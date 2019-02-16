@@ -22,13 +22,22 @@ $form_color_dark: #25349f;
     border-bottom: 2px solid $form_color_dark;
     background-color: transparent;
     resize: none;
-    font-size: 18px; /* TODO: ??? */
+    font-size: 18px;
+
+    &.validation-failed {
+      border-bottom: 2px solid $red_error;
+    }
   }
 
   label {
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 5px;
+  }
+  p.validation-message {
+    color: $red_error;
+    font-size: 12px;
+    font-weight: 600;
   }
 }
 

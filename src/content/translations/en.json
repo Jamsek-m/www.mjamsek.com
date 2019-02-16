@@ -31,8 +31,10 @@
   "footer.contact.send": "Send",
   "footer.contact.send_loading": "Sending ...",
   "footer.contact.success": "Message was sent!",
-  "footer.contact.error.empty_field": "All fields are required!",
-  "footer.contact.error.invalid_email": "Email is invalid!",
+  "footer.contact.error.empty.name": "Name is mandatory!",
+  "footer.contact.error.empty.message": "Message is mandatory!",
+  "footer.contact.error.empty.email": "Email is mandatory!",
+  "footer.contact.error.invalid.email": "Email is invalid!",
   "footer.contact.error.server": "Error when sending email!",
   "footer.contact.error.server_apology": "Message sender component is currently not working. Alternatively, you can contact me directly",
   "footer.contact.error.server_apology_link": "here"

@@ -31,8 +31,10 @@
   "footer.contact.send": "Pošlji",
   "footer.contact.send_loading": "Pošiljam ...",
   "footer.contact.success": "Sporočilo je bilo poslano!",
-  "footer.contact.error.empty_field": "Vsa polja so obvezna!",
-  "footer.contact.error.invalid_email": "Elektronski naslov je neveljaven!",
+  "footer.contact.error.empty.name": "Ime je obvezno!",
+  "footer.contact.error.empty.message": "Sporočilo je obvezno!",
+  "footer.contact.error.empty.email": "Email je obvezen!",
+  "footer.contact.error.invalid.email": "Email je neveljaven!",
   "footer.contact.error.server": "Napaka pri pošiljanju sporočila!",
   "footer.contact.error.server_apology": "Komponenta za pošiljanje sporočila trenutno ne deluje. Lahko me pa kontaktirate direktno",
   "footer.contact.error.server_apology_link": "tukaj"
