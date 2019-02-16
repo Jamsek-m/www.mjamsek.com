@@ -31,7 +31,7 @@ export class HeaderComponent extends Component {
 
     initActiveLink() {
         if (typeof window !== "undefined") {
-            const pattern = new RegExp(/(\/[a-zA-Z0-9]*)\/?\d+$/);
+            const pattern = new RegExp(/(\/[a-zA-Z0-9]*)(\/.+|\/?)$/);
             const match = pattern.exec(window.location.pathname);
             if (match) {
                 return menuLinks.find(link => link.url === match[1]) || menuLinks[0];
