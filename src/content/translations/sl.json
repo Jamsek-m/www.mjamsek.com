@@ -1,6 +1,11 @@
 {
   "general.btn.back": "Nazaj",
 
+  "not-found.title": "Napaka 404!",
+  "not-found.message": "Zahtevana stran ne obstaja!",
+  "not-found.home": "Pojdi nazaj",
+  "not-found.link": "domov",
+
   "navbar.logo": "mJamsek",
   "navbar.home": "Domov",
   "navbar.projects": "Projekti",
