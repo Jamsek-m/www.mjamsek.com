@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 @import "../../../styles/media-mixin";
 
-$shadow_color: rgba(75, 75, 245, 0.3);
+
 
 .lang-dropdown {
   margin-right: 30px;
@@ -23,9 +23,9 @@ $shadow_color: rgba(75, 75, 245, 0.3);
   background-color: $white;
   z-index: 100;
   border-radius: 3px;
-  -webkit-box-shadow: 10px 10px 60px 2px $shadow_color;
-  -moz-box-shadow: 10px 10px 60px 2px $shadow_color;
-  box-shadow: 10px 10px 60px 2px $shadow_color;
+  -webkit-box-shadow: 10px 10px 60px 2px $shadow_color_blue;
+  -moz-box-shadow: 10px 10px 60px 2px $shadow_color_blue;
+  box-shadow: 10px 10px 60px 2px $shadow_color_blue;
 }
 
 .lang-dropdown-item {

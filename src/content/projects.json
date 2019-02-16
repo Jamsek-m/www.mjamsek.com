@@ -4,26 +4,23 @@
       "id": "rest-client",
       "path": "/projekti/kumuluzee-rest-client",
       "publicRepo": true,
-      "repoUrl": "",
+      "repoUrl": "https://github.com/kumuluz/kumuluzee-rest-client",
       "version": "1.0.1",
       "lastUpdate": "",
       "deployment": {
         "type": "link",
-        "url": ""
+        "url": "https://github.com/kumuluz/kumuluzee-rest-client"
       },
-      "images": [
-        "/public/slika.png"
-      ],
       "translations": {
         "en": {
           "name": "KumuluzEE RestClient",
-          "shortDescription": "Implementation of RestClient for KumuluzEE platform.",
-          "description": "Longer description"
+          "shortDescription": "Implementation of MicroProfile RestClient 1.0.1 for KumuluzEE platform.",
+          "description": "<p>As part of project \"Development of microservices for blockchain support and application in CRM system domains (MBCRM)\" I implemented MicroProfile specification for RestClient</p><h3>MicroProfile</h3><p><a href=\"https://microprofile.io/\" target=\"_blank\">MicroProfile</a> is an open-source JavaEE specification oriented towards microservice architecture</p>"
         },
         "sl": {
           "name": "KumuluzEE RestClient",
-          "shortDescription": "Implementacija RestClienta za platformo KumuluzEE.",
-          "description": "Daljši opis"
+          "shortDescription": "Implementacija MicroProfile RestClienta 1.0.1 za platformo KumuluzEE.",
+          "description": "<p>Kot del projekta \"Razvoj mikrostoritev za podporo tehnologijam veriženja blokov (blockchain) in aplikacija na domeno CRM sistemov (akronim MBCRM)\" sem implementiral MicroProfile specifikacijo RestClient-a</p><h3>MicroProfile</h3><p><a href=\"https://microprofile.io/\" target=\"_blank\">MicroProfile</a> je odprtokodna JavaEE specifikacija usmerjena v mikrostoritveno arhitekturo</p>"
         }
       }
     },
@@ -32,26 +29,23 @@
       "id": "dockerhub",
       "path": "/projekti/dockerhub",
       "publicRepo": true,
-      "repoUrl": "",
+      "repoUrl": "https://gitlab.com/Jamsek-m/dockerhub",
       "version": "1.0.2",
       "lastUpdate": "",
       "deployment": {
         "type": "link",
         "url": "https://dockerhub.mjamsek.com"
       },
-      "images": [
-        "/public/slika.png"
-      ],
       "translations": {
         "en": {
           "name": "DockerHub",
           "shortDescription": "Application for overview of Docker images in private registry",
-          "description": "Longer description"
+          "description": "Application, which communicates with Docker Daemon API to get information about repositories and images"
         },
         "sl": {
           "name": "DockerHub",
           "shortDescription": "Aplikacija za pregled Docker slik v privatnem registru",
-          "description": "Daljši opis"
+          "description": "Aplikacija, ki preko Docker Daemon APIja pridobi podatke o repozitorijih in slikah in jih prikaže"
         }
       }
     }

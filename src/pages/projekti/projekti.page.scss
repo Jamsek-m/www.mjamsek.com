@@ -1,0 +1,131 @@
+@import "../../styles/media-mixin";
+@import "../../styles/variables";
+
+$border_color: #a5a5a5;
+
+.projects-title {
+  margin-bottom: 50px;
+}
+
+.project-item {
+  .project-img {
+    img {
+      border-radius: 3px;
+      -webkit-box-shadow: 10px 10px 60px 2px $shadow_color_grey;
+      -moz-box-shadow: 10px 10px 60px 2px $shadow_color_grey;
+      box-shadow: 10px 10px 60px 2px $shadow_color_grey;
+
+      &:hover {
+        -webkit-box-shadow: 10px 10px 60px 2px $shadow_color_grey_dark;
+        -moz-box-shadow: 10px 10px 60px 2px $shadow_color_grey_dark;
+        box-shadow: 10px 10px 60px 2px $shadow_color_grey_dark;
+      }
+    }
+  }
+}
+
+@include device-specific($phone) {
+  %flex-align-center-col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-item {
+    @extend %flex-align-center-col;
+
+    .project-about {
+      @extend %flex-align-center-col;
+
+      .project-desc {
+        text-align: center;
+        width: 90%;
+      }
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+      border-bottom: 2px solid $border_color;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include device-specific($tablet) {
+  %flex-align-start-tablet {
+    display: flex;
+    align-items: flex-start;
+  }
+  .project-item {
+    @extend %flex-align-start-tablet;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    .project-name {
+      cursor: pointer;
+    }
+
+    .project-about {
+      @extend %flex-align-start-tablet;
+      justify-content: flex-start;
+      flex-direction: row;
+      width: 80%;
+
+      .project-img {
+        width: 40%;
+        cursor: pointer;
+      }
+
+      .project-desc {
+        margin: 40px 0 0 40px;
+        text-align: left;
+        cursor: pointer;
+        width: inherit;
+      }
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+      border-bottom: 2px solid $border_color;
+    }
+  }
+}
+
+@include device-specific($pc) {
+  %flex-align-start-pc {
+    display: flex;
+    align-items: flex-start;
+  }
+  .project-item {
+    @extend %flex-align-start-pc;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    .project-name {
+      cursor: pointer;
+    }
+
+    .project-about {
+      @extend %flex-align-start-pc;
+      justify-content: flex-start;
+      flex-direction: row;
+      width: 60%;
+
+      .project-img {
+        width: 40%;
+        cursor: pointer;
+      }
+
+      .project-desc {
+        margin: 40px 0 0 40px;
+        text-align: left;
+        cursor: pointer;
+        width: inherit;
+      }
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+      border-bottom: 2px solid $border_color;
+    }
+  }
+}
