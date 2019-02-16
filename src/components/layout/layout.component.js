@@ -10,6 +10,8 @@ import { addLocaleData, IntlProvider } from "react-intl";
 import { HeaderComponent } from "./header/header.component";
 import { initializeIcons } from "../../content/fontawesome-icons";
 import { FooterComponent } from "./footer/footer.component";
+import Helmet from "react-helmet";
+import favicon from "../../assets/favicon.ico";
 
 const messages = {
     en: enTranslations,
@@ -35,6 +37,17 @@ export class LayoutComponent extends Component {
         return (
             <IntlProvider locale={locale} messages={messages[locale]}>
                 <div className="wrapper">
+                    <Helmet>
+                        <meta charSet="UTF-8"/>
+                        <meta name="description" content="Miha Jamsek's personal webpage"/>
+                        <meta name="keywords"
+                            content="Miha,Jamsek,Jamšek,spletna,stran,website,student,programmer,študent,programer"/>
+                        <meta name="author" content="Miha Jamsek"/>
+
+                        <link rel="shortcut icon" href={favicon} type="image/x-icon"/>
+                        <link rel="icon" href={favicon} type="image/x-icon"/>
+                    </Helmet>
+
                     <HeaderComponent/>
                     <div className="content">
                         <section>

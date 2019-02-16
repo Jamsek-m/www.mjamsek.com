@@ -31,10 +31,11 @@ export class HeaderComponent extends Component {
 
     initActiveLink() {
         if (typeof window !== "undefined") {
-            const pattern = new RegExp(/(\/[a-zA-Z0-9]*)(\/.+|\/?)$/);
+            const pattern = new RegExp(/(\/.{2})?(\/[a-zA-Z0-9]*)(\/.+|\/?)$/);
             const match = pattern.exec(window.location.pathname);
+
             if (match) {
-                return menuLinks.find(link => link.url === match[1]) || menuLinks[0];
+                return menuLinks.find(link => link.url === match[2]) || menuLinks[0];
             } else {
                 return menuLinks.find(link => link.url === window.location.pathname) || menuLinks[0];
             }

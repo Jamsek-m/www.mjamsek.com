@@ -6,6 +6,7 @@ import avatarImage from "../assets/images/avatar-circle.png";
 
 import "./index.page.scss";
 import { CurrentProjectsComponent } from "../components/current-projects/current-projects.component";
+import HelmetTitleComponent from "../components/i18n/helmet-title.component";
 
 export default class IndexPage extends Component {
 
@@ -20,6 +21,7 @@ export default class IndexPage extends Component {
         return (
             <LayoutComponent locale={locale}>
                 <div className="index-page">
+                    <HelmetTitleComponent/>
                     <div className="index-header">
                         <img src={avatarImage} alt="avatar"/>
                         <h1><FormattedMessage id="index.about"/></h1>

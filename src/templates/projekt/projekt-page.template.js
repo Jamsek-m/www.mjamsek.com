@@ -10,6 +10,7 @@ import { formatDate } from "../../components/i18n/format-date";
 import { FileService } from "../../services/file.service";
 import { RepoComponent } from "../../components/repo/repo.component";
 import { PictureViewerComponent } from "../../components/picture-viewer/picture-viewer.component";
+import HelmetTitleComponent from "../../components/i18n/helmet-title.component";
 
 export default class ProjektPageTemplate extends Component {
 
@@ -52,7 +53,7 @@ export default class ProjektPageTemplate extends Component {
         return (
             <LayoutComponent locale={locale}>
                 <div>
-
+                    <HelmetTitleComponent title={project.translations[locale].name}/>
                     <LinkComponent className="back-btn" to="/projekti">
                         <FormattedMessage id="general.btn.back"/>
                     </LinkComponent>

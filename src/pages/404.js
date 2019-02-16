@@ -1,20 +1,7 @@
 import React, { Component } from "react";
-
-import Layout from "../components/layout";
-import SEO from "../components/seo";
 import PropTypes from "prop-types";
 import { LayoutComponent } from "../components/layout/layout.component";
 import { FormattedMessage } from "react-intl";
-
-/*const NotFoundPage = () => (
-    <Layout>
-        <SEO title="404: Not found" />
-        <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Layout>
-);
-
-export default NotFoundPage;*/
 
 import "./404.scss";
 import LinkComponent from "../components/i18n/link.component";

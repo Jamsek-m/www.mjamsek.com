@@ -7,6 +7,7 @@ import { navigateTo } from "../../components/i18n/navigate-to";
 import emptyThumbnail from "../../assets/projects/empty.png";
 
 import "./projekti.page.scss";
+import HelmetTitleComponent from "../../components/i18n/helmet-title.component";
 
 export default class ProjektiPage extends Component {
 
@@ -27,6 +28,7 @@ export default class ProjektiPage extends Component {
         return (
             <LayoutComponent locale={locale}>
                 <div>
+                    <HelmetTitleComponent titleTag="page.projekti.title"/>
                     <h1 className="projects-title"><FormattedMessage id="projects.title"/></h1>
                     {data.projects.map((project, index) => (
                         <div key={index} className="project-item" id={project.id}>
