@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { LayoutComponent } from "../components/layout/layout.component";
 import { FormattedMessage } from "react-intl";
-import { LinkComponent } from "../components/i18n";
 import avatarImage from "../assets/images/avatar-circle.png";
 
 import "./index.page.scss";
+import { CurrentProjectsComponent } from "../components/current-projects/current-projects.component";
 
 export default class IndexPage extends Component {
 
@@ -30,7 +30,7 @@ export default class IndexPage extends Component {
                     <p><FormattedMessage id="index.content.cv"/></p>
                     <h3><FormattedMessage id="index.content.tech_title"/></h3>
                     <p><FormattedMessage id="index.content.tech"/></p>
-                    {/*<mj-current-projects></mj-current-projects>*/}
+                    <CurrentProjectsComponent locale={locale}/>
                 </div>
             </LayoutComponent>
         );

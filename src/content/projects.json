@@ -28,6 +28,7 @@
       }
     },
     {
+      "inProgress": true,
       "id": "dockerhub",
       "path": "/projekti/dockerhub",
       "publicRepo": true,
