@@ -25,7 +25,7 @@ export class CurrentProjectsComponent extends Component {
                 <ul>
                     {getCurrentProjects(locale).map((project, index) => (
                         <li key={index}>
-                            <span className="project-name">
+                            <span className="project-name" onClick={() => navigateTo(project.path, locale)}>
                                 {project.name}
                             </span>
                             <span className="project-link" onClick={() => navigateTo(project.path, locale)}>

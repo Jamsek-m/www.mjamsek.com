@@ -4,6 +4,7 @@
   li {
     .project-name {
       margin-right: 8px;
+      cursor: pointer;
     }
 
     .project-link {
@@ -14,8 +15,8 @@
 
 @include device-specific($pc) {
   .current-projects {
-    li {
-      .project-link:hover {
+    li:hover {
+      .project-link {
         padding-left: 5px;
       }
     }
