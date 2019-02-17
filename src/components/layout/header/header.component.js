@@ -16,7 +16,6 @@ export class HeaderComponent extends Component {
             openedMobileMenu: false,
             activeLink: this.initActiveLink(),
         };
-        console.log("State", this.state);
         this.changeActivePage = this.changeActivePage.bind(this);
         this.isLinkActive = this.isLinkActive.bind(this);
         this.getRootLink = this.getRootLink.bind(this);
@@ -34,7 +33,6 @@ export class HeaderComponent extends Component {
         if (typeof window !== "undefined") {
             const pattern = new RegExp(/(\/.{2})?(\/[a-zA-Z0-9]*)(\/.+|\/?)$/);
             const match = pattern.exec(window.location.pathname);
-            console.log("Match:", match, window.location.pathname);
             if (match) {
                 return menuLinks.find(link => link.url === match[2]) || menuLinks[0];
             } else {
@@ -55,7 +53,6 @@ export class HeaderComponent extends Component {
 
     isLinkActive(menuItem) {
         if (!this.state.activeLink) return false;
-        console.log("Is active", menuItem, this.state.activeLink);
         return menuItem.id === this.state.activeLink.id;
     }
 
