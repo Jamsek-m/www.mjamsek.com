@@ -152,11 +152,6 @@ class ContactFormComponent extends Component {
                                     email: "",
                                     message: "",
                                 },
-                                formData: {
-                                    name: "",
-                                    email: "",
-                                    message: "",
-                                },
                             });
                         },
                     );
