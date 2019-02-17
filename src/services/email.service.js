@@ -12,8 +12,8 @@ export class EmailService {
             const request = new XMLHttpRequest();
             request.open("POST", "https://email.mjamsek.com/api/v1/email", true);
             request.setRequestHeader("Content-Type", "application/json");
-            request.setRequestHeader("X-Email-Service-Key", "XxXn0hh09hEekp65QAxQJOpyVE39sv7QOpJQUABVA");
-            request.addEventListener("load", (res) => {
+            request.setRequestHeader("X-Email-Service-Key", "xQUmUlTaSC9kpnqz6LZPZhlNcpUpk6uJMrcqWQnhJ");
+            request.addEventListener("load", () => {
                 const response = JSON.parse(request.responseText);
                 if (request.status === 200) {
                     resolve(response);
