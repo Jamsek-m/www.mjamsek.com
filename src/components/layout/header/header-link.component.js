@@ -16,7 +16,7 @@ export class HeaderLinkComponent extends Component {
     render() {
         const { menuItem, active, whenSelected } = this.props;
         const clazz = (active && menuItem.internal) ? "nav-links active-nav-link" : "nav-links";
-
+        console.log("clazz", active, clazz);
         if (menuItem.internal) {
             return (
                 <LinkComponent to={menuItem.url} className={clazz} onClick={() => whenSelected(true)}>
