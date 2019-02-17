@@ -27,10 +27,11 @@ $background_color: #282828;
   .selection-area {
     .selection-items {
       .selection-item {
-        cursor: pointer;
+        padding: 10px;
 
         img {
           margin-bottom: 0;
+          cursor: pointer;
         }
       }
     }
@@ -135,6 +136,9 @@ $background_color: #282828;
         .selection-item {
           width: 60%;
           margin: 0 10px 0 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
 
@@ -163,6 +167,7 @@ $background_color: #282828;
 
       .image-area {
         width: 50%;
+        min-height: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -191,6 +196,9 @@ $background_color: #282828;
         .selection-item {
           width: 60%;
           margin: 0 10px 0 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
 
@@ -199,7 +207,6 @@ $background_color: #282828;
         justify-content: center;
         align-items: center;
       }
-
     }
   }
 }
