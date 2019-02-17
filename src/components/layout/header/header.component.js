@@ -33,7 +33,7 @@ export class HeaderComponent extends Component {
         if (typeof window !== "undefined") {
             const pattern = new RegExp(/(\/.{2})?(\/[a-zA-Z0-9]*)(\/.+|\/?)$/);
             const match = pattern.exec(window.location.pathname);
-
+            console.log("Match:", match, window.location.pathname);
             if (match) {
                 return menuLinks.find(link => link.url === match[2]) || menuLinks[0];
             } else {
