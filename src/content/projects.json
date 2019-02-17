@@ -122,12 +122,12 @@
         "en": {
           "name": "QDIS",
           "shortDescription": "Quick Delivery Information Sytem",
-          "description": "<p>Information system that is built around the idea of having quick and easy delivery of new features.</p><p>QDIS is built with Angular and KumuluzEE JavaEE framework and is using MySQL and Keycloak for storage and authorization.</p>"
+          "description": "<p>Information system that is built around the idea of having quick and easy delivery of new features.</p><p>QDIS is built with Angular and KumuluzEE JavaEE framework and is using MySQL and Keycloak for storage and authorization.</p><p>Application (apart from core functionalities) is built purely as client-side application. Developers need to only define data needed from server and set permissions who can access those datapoints. They can then be used all over application to develop various functionalities required for business.</p>"
         },
         "sl": {
           "name": "QDIS",
           "shortDescription": "Quick Delivery Information Sytem",
-          "description": "<p>Informacijski sistem, ki je zgrajen na ideji, ki omogoča hitro in lahko dostavo novih funkcij.</p><p>QDIS je zgrajen z Angular in KumuluzEE JavaEE spletnim ogrodjem in uporablja MySQL in Keycloak za hrambo in avtorizacijo.</p>"
+          "description": "<p>Informacijski sistem, ki je zgrajen na ideji, ki omogoča hitro in lahko dostavo novih funkcij.</p><p>QDIS je zgrajen z Angular in KumuluzEE JavaEE spletnim ogrodjem in uporablja MySQL in Keycloak za hrambo in avtorizacijo.</p><p>Aplikacija (razen osrednjih funkcionalnosti) je zgrajena v celoti kot čelna aplikacija. Razvijalcem je potrebno samo definirati podatke, ki jih potrebujejo iz strežnika in nastaviti dovoljenja, kdo lahko do teh podatkov dostopa. Te podatkovne točke se nato lahko uporablja širom celotne aplikacije za razvoj raznih poslovnih funkcionalnosti.</p>"
         }
       }
     }
