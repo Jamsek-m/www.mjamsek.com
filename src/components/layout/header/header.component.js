@@ -16,6 +16,7 @@ export class HeaderComponent extends Component {
             openedMobileMenu: false,
             activeLink: this.initActiveLink(),
         };
+        console.log("State", this.state);
         this.changeActivePage = this.changeActivePage.bind(this);
         this.isLinkActive = this.isLinkActive.bind(this);
         this.getRootLink = this.getRootLink.bind(this);
