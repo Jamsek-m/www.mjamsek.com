@@ -32,7 +32,6 @@
       }
     },
     {
-      "inProgress": true,
       "id": "dockerhub",
       "path": "/projekti/dockerhub",
       "publicRepo": true,
@@ -60,6 +59,75 @@
           "name": "DockerHub",
           "shortDescription": "Aplikacija za pregled Docker slik v privatnem registru",
           "description": "Aplikacija, ki preko Docker Daemon APIja pridobi podatke o repozitorijih in slikah in jih prikaže"
+        }
+      }
+    },
+    {
+      "id": "tasker",
+      "path": "/projekti/tasker",
+      "publicRepo": true,
+      "repoUrl": "https://github.com/Jamsek-m/tasker",
+      "version": "0.0.2",
+      "lastUpdate": "2019-02-16T15:34:42.990Z",
+      "deployment": {
+        "type": "link",
+        "url": "https://tasker.mjamsek.com"
+      },
+      "translations": {
+        "en": {
+          "name": "Tasker",
+          "shortDescription": "Application for performing tasks after CI cycle",
+          "description": "<p>Application that can execute API call, shell command or plugin actions.</p><p>Currently used for deploying personal projects after CI cycle.</p>"
+        },
+        "sl": {
+          "name": "Tasker",
+          "shortDescription": "Aplikacija za izvajanje opravil po CI ciklu",
+          "description": "<p>Aplikacija ki lahko izvaja API klice, ukaze v lupini in akcije vtičnikov.</p><p>Trenutno je v uporabi za namestitev osebnih projektov po CI ciklu.</p>"
+        }
+      }
+    },
+    {
+      "id": "email-service",
+      "path": "/projekti/email-service",
+      "publicRepo": false,
+      "repoUrl": "",
+      "version": "0.0.5",
+      "lastUpdate": "2019-02-16T15:34:42.990Z",
+      "deployment": {
+        "type": "link",
+        "url": "https://email.mjamsek.com"
+      },
+      "translations": {
+        "en": {
+          "name": "Email service",
+          "shortDescription": "Service for sending emails",
+          "description": "Service for sending emails from other websites or applications."
+        },
+        "sl": {
+          "name": "Email storitev",
+          "shortDescription": "Storitev za pošiljanje emailov",
+          "description": "Storitev za pošiljanje emailov iz drugih spletnih strani in aplikacij."
+        }
+      }
+    },
+    {
+      "inProgress": true,
+      "id": "quick-delivery-is",
+      "path": "/projekti/quick-delivery-is",
+      "publicRepo": false,
+      "repoUrl": "",
+      "version": "0.0.1-SNAPSHOT",
+      "lastUpdate": "2019-02-16T15:34:42.990Z",
+      "translations": {
+        "en": {
+          "name": "QDIS",
+          "shortDescription": "Quick Delivery Information Sytem",
+          "description": "<p>Information system that is built around the idea of having quick and easy delivery of new features.</p><p>QDIS is built with Angular and KumuluzEE JavaEE framework and is using MySQL and Keycloak for storage and authorization.</p>"
+        },
+        "sl": {
+          "name": "QDIS",
+          "shortDescription": "Quick Delivery Information Sytem",
+          "description": "<p>Informacijski sistem, ki je zgrajen na ideji, ki omogoča hitro in lahko dostavo novih funkcij.</p><p>QDIS je zgrajen z Angular in KumuluzEE JavaEE spletnim ogrodjem in uporablja MySQL in Keycloak za hrambo in avtorizacijo.</p>"
         }
       }
     }
