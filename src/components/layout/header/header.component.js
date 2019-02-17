@@ -37,7 +37,7 @@ export class HeaderComponent extends Component {
             if (match) {
                 return menuLinks.find(link => link.url === match[2]) || menuLinks[0];
             } else {
-                return menuLinks.find(link => link.url === window.location.pathname) || menuLinks[0];
+                return menuLinks[0];
             }
         }
         return null;
