@@ -5,8 +5,8 @@
       "path": "/projekti/kumuluzee-rest-client",
       "publicRepo": true,
       "repoUrl": "https://github.com/kumuluz/kumuluzee-rest-client",
-      "version": "1.0.1",
-      "lastUpdate": "2019-02-16T15:34:42.990Z",
+      "version": "1.1.0",
+      "lastUpdate": "2019-01-24T14:11:00.000Z",
       "thumbnail": "rest-client-1.png",
       "images": [
         "rest-client-1.png",
@@ -36,8 +36,8 @@
       "path": "/projekti/dockerhub",
       "publicRepo": true,
       "repoUrl": "https://gitlab.com/Jamsek-m/dockerhub",
-      "version": "1.0.2",
-      "lastUpdate": "2019-02-16T15:34:42.990Z",
+      "version": "1.0.1",
+      "lastUpdate": "2019-02-04T15:35:39.000Z",
       "thumbnail": "dockerhub-1.png",
       "images": [
         "dockerhub-1.png",
@@ -68,7 +68,7 @@
       "publicRepo": true,
       "repoUrl": "https://github.com/Jamsek-m/tasker",
       "version": "0.0.2",
-      "lastUpdate": "2019-02-16T15:34:42.990Z",
+      "lastUpdate": "2019-02-09T16:02:35.000Z",
       "deployment": {
         "type": "link",
         "url": "https://tasker.mjamsek.com"
@@ -92,7 +92,7 @@
       "publicRepo": false,
       "repoUrl": "",
       "version": "0.0.5",
-      "lastUpdate": "2019-02-16T15:34:42.990Z",
+      "lastUpdate": "2019-02-14T22:12:06.000Z",
       "deployment": {
         "type": "link",
         "url": "https://email.mjamsek.com"
