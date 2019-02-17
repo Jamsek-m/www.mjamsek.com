@@ -55,6 +55,7 @@ export class HeaderComponent extends Component {
 
     isLinkActive(menuItem) {
         if (!this.state.activeLink) return false;
+        console.log("Is active", menuItem, this.state.activeLink);
         return menuItem.id === this.state.activeLink.id;
     }
 
