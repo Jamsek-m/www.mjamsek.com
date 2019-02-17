@@ -19,7 +19,7 @@ export default class ProjektPageTemplate extends Component {
     };
 
     hasPictures(project) {
-        return project.images.length > 0;
+        return project.images && project.images.length > 0;
     }
 
     resolveDeploymentIcon(project) {

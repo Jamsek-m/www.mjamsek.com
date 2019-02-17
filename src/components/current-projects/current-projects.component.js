@@ -21,19 +21,23 @@ export class CurrentProjectsComponent extends Component {
         const { locale } = this.props;
         return (
             <div className="current-projects">
-                <p><FormattedMessage id="index.content.current"/>:</p>
-                <ul>
-                    {getCurrentProjects(locale).map((project, index) => (
-                        <li key={index}>
-                            <span className="project-name" onClick={() => navigateTo(project.path, locale)}>
-                                {project.name}
-                            </span>
-                            <span className="project-link" onClick={() => navigateTo(project.path, locale)}>
-                                <FontAwesomeIcon icon="arrow-right"/>
-                            </span>
-                        </li>
-                    ))}
-                </ul>
+                {getCurrentProjects(locale).length > 0 ?
+                    <div>
+                        <p><FormattedMessage id="index.content.current"/>:</p>
+                        <ul>
+                            {getCurrentProjects(locale).map((project, index) => (
+                                <li key={index}>
+                                    <span className="project-name" onClick={() => navigateTo(project.path, locale)}>
+                                        {project.name}
+                                    </span>
+                                    <span className="project-link" onClick={() => navigateTo(project.path, locale)}>
+                                        <FontAwesomeIcon icon="arrow-right"/>
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div> : null
+                }
             </div>
         );
     }
