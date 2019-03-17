@@ -130,6 +130,27 @@
           "description": "<p>Informacijski sistem, ki je zgrajen na ideji, ki omogoča hitro in lahko dostavo novih funkcij.</p><p>QDIS je zgrajen z Angular in KumuluzEE JavaEE spletnim ogrodjem in uporablja MySQL in Keycloak za hrambo in avtorizacijo.</p><p>Aplikacija (razen osrednjih funkcionalnosti) je zgrajena v celoti kot čelna aplikacija. Razvijalcem je potrebno samo definirati podatke, ki jih potrebujejo iz strežnika in nastaviti dovoljenja, kdo lahko do teh podatkov dostopa. Te podatkovne točke se nato lahko uporablja širom celotne aplikacije za razvoj raznih poslovnih funkcionalnosti.</p>"
         }
       }
+    },
+    {
+      "inProgress": true,
+      "id": "lozigor-box",
+      "path": "/projekti/lozigor-box",
+      "publicRepo": true,
+      "repoUrl": "https://github.com/Jamsek-m/lozigor-box",
+      "version": "0.0.1-SNAPSHOT",
+      "lastUpdate": "2019-03-17T18:49:08.538Z",
+      "translations": {
+        "en": {
+          "name": "LozigorBox",
+          "shortDescription": "Lightweight fileshare for my personal use",
+          "description": "<p>Fileshare enabling me to store data and share it with other people.</p>"
+        },
+        "sl": {
+          "name": "LozigorBox",
+          "shortDescription": "Preprosta shramba datotek za mojo osebno uporabo",
+          "description": "<p>Shramba datotek, ki mi omogoča, da jih delim z drugimi.</p>"
+        }
+      }
     }
   ]
 }
