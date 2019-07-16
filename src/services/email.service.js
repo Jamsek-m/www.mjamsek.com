@@ -22,7 +22,11 @@ export class EmailService {
     }
 
     static __encodeData(data) {
-        return Object.keys(data).map(key => {
+        return Object.keys(data)
+            .filter(key => {
+                return data[key] !== undefined;
+            })
+            .map(key => {
             return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
         }).join("&");
     }
