@@ -27,8 +27,8 @@ export class EmailService {
                 return data[key] !== undefined;
             })
             .map(key => {
-            return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
-        }).join("&");
+                return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
+            }).join("&");
     }
 
 }

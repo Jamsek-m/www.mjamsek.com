@@ -32,6 +32,73 @@
       }
     },
     {
+      "inProgress": true,
+      "id": "metrics-monitor",
+      "path": "/projekti/metrics-monitor",
+      "publicRepo": true,
+      "repoUrl": "https://github.com/Jamsek-m/diploma-thesis",
+      "version": "0.0.1-SNAPSHOT",
+      "lastUpdate": "2019-07-16T21:19:33.976Z",
+      "translations": {
+        "en": {
+          "name": "MetricsMonitor",
+          "shortDescription": "Monitor for Real User Monitoring for Single Page Applications",
+          "description": "<p>Case study project for my diploma thesis - a platform for monitoring metrics for single page applications.</p>"
+        },
+        "sl": {
+          "name": "MetricsMonitor",
+          "shortDescription": "Kontrolor za spremljanje uporabniških metrik v realnem času (RUM) za aplikacije na eni strani (SPA)",
+          "description": "<p>Študijski projekt za diplomsko delo - platforma za spremljanje metrik aplikacij na eni strani.</p>"
+        }
+      }
+    },
+    {
+      "inProgress": true,
+      "id": "tasker",
+      "path": "/projekti/tasker",
+      "publicRepo": true,
+      "repoUrl": "https://github.com/Jamsek-m/tasker",
+      "version": "0.0.2",
+      "lastUpdate": "2019-07-16T21:19:33.976Z",
+      "deployment": {
+        "type": "link",
+        "url": "https://tasker.mjamsek.com"
+      },
+      "translations": {
+        "en": {
+          "name": "Tasker",
+          "shortDescription": "Application for managing deployed services",
+          "description": "<p>Application for managing and monitoring deployed services.</p><p>Application is used to track service health status and managing its deployment.</p><p>Docker is currently the only supported deployment environment.</p>"
+        },
+        "sl": {
+          "name": "Tasker",
+          "shortDescription": "Aplikacija za nadzorovanje nameščenih storitev",
+          "description": "<p>Aplikacija za upravljanje in nadzorovanje nameščenih storitev</p><p>Aplikacija se uporablja za pregled zdravja storitev in upravljanja z njenimi namestitvami.</p><p>Docker je trenutno edino podprto izvajalo okolje.</p>"
+        }
+      }
+    },
+    {
+      "inProgress": true,
+      "id": "lozigor-box",
+      "path": "/projekti/lozigor-box",
+      "publicRepo": true,
+      "repoUrl": "https://github.com/Jamsek-m/lozigor-box",
+      "version": "0.0.1-SNAPSHOT",
+      "lastUpdate": "2019-03-17T18:49:08.538Z",
+      "translations": {
+        "en": {
+          "name": "LozigorBox",
+          "shortDescription": "Lightweight fileshare for my personal use",
+          "description": "<p>Fileshare enabling me to store data and share it with other people.</p>"
+        },
+        "sl": {
+          "name": "LozigorBox",
+          "shortDescription": "Preprosta shramba datotek za mojo osebno uporabo",
+          "description": "<p>Shramba datotek, ki mi omogoča, da jih delim z drugimi.</p>"
+        }
+      }
+    },
+    {
       "id": "dockerhub",
       "path": "/projekti/dockerhub",
       "publicRepo": true,
@@ -63,30 +130,6 @@
       }
     },
     {
-      "id": "tasker",
-      "path": "/projekti/tasker",
-      "publicRepo": true,
-      "repoUrl": "https://github.com/Jamsek-m/tasker",
-      "version": "0.0.2",
-      "lastUpdate": "2019-02-09T16:02:35.000Z",
-      "deployment": {
-        "type": "link",
-        "url": "https://tasker.mjamsek.com"
-      },
-      "translations": {
-        "en": {
-          "name": "Tasker",
-          "shortDescription": "Application for performing tasks after CI cycle",
-          "description": "<p>Application that can execute API call, shell command or plugin actions.</p><p>Currently used for deploying personal projects after CI cycle.</p>"
-        },
-        "sl": {
-          "name": "Tasker",
-          "shortDescription": "Aplikacija za izvajanje opravil po CI ciklu",
-          "description": "<p>Aplikacija ki lahko izvaja API klice, ukaze v lupini in akcije vtičnikov.</p><p>Trenutno je v uporabi za namestitev osebnih projektov po CI ciklu.</p>"
-        }
-      }
-    },
-    {
       "id": "email-service",
       "path": "/projekti/email-service",
       "publicRepo": false,
@@ -111,7 +154,6 @@
       }
     },
     {
-      "inProgress": true,
       "id": "quick-delivery-is",
       "path": "/projekti/quick-delivery-is",
       "publicRepo": false,
@@ -128,27 +170,6 @@
           "name": "QDIS",
           "shortDescription": "Quick Delivery Information Sytem",
           "description": "<p>Informacijski sistem, ki je zgrajen na ideji, ki omogoča hitro in lahko dostavo novih funkcij.</p><p>QDIS je zgrajen z Angular in KumuluzEE JavaEE spletnim ogrodjem in uporablja MySQL in Keycloak za hrambo in avtorizacijo.</p><p>Aplikacija (razen osrednjih funkcionalnosti) je zgrajena v celoti kot čelna aplikacija. Razvijalcem je potrebno samo definirati podatke, ki jih potrebujejo iz strežnika in nastaviti dovoljenja, kdo lahko do teh podatkov dostopa. Te podatkovne točke se nato lahko uporablja širom celotne aplikacije za razvoj raznih poslovnih funkcionalnosti.</p>"
-        }
-      }
-    },
-    {
-      "inProgress": true,
-      "id": "lozigor-box",
-      "path": "/projekti/lozigor-box",
-      "publicRepo": true,
-      "repoUrl": "https://github.com/Jamsek-m/lozigor-box",
-      "version": "0.0.1-SNAPSHOT",
-      "lastUpdate": "2019-03-17T18:49:08.538Z",
-      "translations": {
-        "en": {
-          "name": "LozigorBox",
-          "shortDescription": "Lightweight fileshare for my personal use",
-          "description": "<p>Fileshare enabling me to store data and share it with other people.</p>"
-        },
-        "sl": {
-          "name": "LozigorBox",
-          "shortDescription": "Preprosta shramba datotek za mojo osebno uporabo",
-          "description": "<p>Shramba datotek, ki mi omogoča, da jih delim z drugimi.</p>"
         }
       }
     }
