@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+import * as PropTypes from "prop-types";
 import { LayoutComponent } from "../components/layout/layout.component";
 import { FormattedMessage } from "react-intl";
 import avatarImage from "../assets/images/avatar-circle.png";
@@ -7,12 +7,17 @@ import avatarImage from "../assets/images/avatar-circle.png";
 import "./index.page.scss";
 import { CurrentProjectsComponent } from "../components/current-projects/current-projects.component";
 import HelmetTitleComponent from "../components/i18n/helmet-title.component";
+import { GoogleAnalyticsService } from "../services/google.analytics.service";
 
 export default class IndexPage extends Component {
 
     static propTypes = {
         pageContext: PropTypes.object,
     };
+
+    componentDidMount() {
+        GoogleAnalyticsService.registerPageView();
+    }
 
     render() {
         const { pageContext } = this.props;

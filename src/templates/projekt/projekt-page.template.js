@@ -11,12 +11,17 @@ import { FileService } from "../../services/file.service";
 import { RepoComponent } from "../../components/repo/repo.component";
 import { PictureViewerComponent } from "../../components/picture-viewer/picture-viewer.component";
 import HelmetTitleComponent from "../../components/i18n/helmet-title.component";
+import { GoogleAnalyticsService } from "../../services/google.analytics.service";
 
 export default class ProjektPageTemplate extends Component {
 
     static propTypes = {
         pageContext: PropTypes.object,
     };
+
+    componentDidMount() {
+        GoogleAnalyticsService.registerPageView();
+    }
 
     hasPictures(project) {
         return project.images && project.images.length > 0;
