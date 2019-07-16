@@ -26,6 +26,8 @@ class ContactFormComponent extends Component {
                 name: "",
                 email: "",
                 message: "",
+                "form-name": "contact-form",
+                itsatrap: undefined
             },
             errors: {
                 name: "",
@@ -133,6 +135,7 @@ class ContactFormComponent extends Component {
                                     message: "",
                                 },
                                 formData: {
+                                    ...this.state.formData,
                                     name: "",
                                     email: "",
                                     message: "",
@@ -182,7 +185,9 @@ class ContactFormComponent extends Component {
         return (
             <div className="contact-form">
                 <h2><FormattedMessage id="footer.contact.title"/></h2>
-                <form onSubmit={this.sendEmail}>
+                <form name="contact-form" data-netlify="true" data-netlify-honeypot="itsatrap" onSubmit={this.sendEmail}>
+                    <input type="hidden" name="form-name" value="contact-form"/>
+                    <input type="hidden" name="itsatrap"/>
                     <div className="forma">
                         <div className="forma-ime-area">
                             <div className="forma-group">
@@ -229,8 +234,8 @@ class ContactFormComponent extends Component {
                                 </AlertComponent> : null
                             }
                         </div>
-                        <div className=" forma-submit">
-                            <button type=" submit" disabled={this.state.inProgress} className={btnClass}>
+                        <div className="forma-submit">
+                            <button type="submit" disabled={this.state.inProgress} className={btnClass}>
                                 <FormattedMessage
                                     id={this.state.inProgress ? "footer.contact.send_loading" : "footer.contact.send"}/>
                             </button>
