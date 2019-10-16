@@ -43,7 +43,6 @@ export class LayoutComponent extends Component {
                         <meta name="keywords"
                             content="Miha,Jamsek,Jamšek,spletna,stran,website,student,programmer,študent,programer"/>
                         <meta name="author" content="Miha Jamsek"/>
-                        <meta name="yandex-verification" content="2edb259bd0b1b4cc" />
 
                         <link rel="shortcut icon" href={favicon} type="image/x-icon"/>
                         <link rel="icon" href={favicon} type="image/x-icon"/>
