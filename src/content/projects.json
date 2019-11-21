@@ -82,6 +82,34 @@
       }
     },
     {
+      "id": "ngx-config",
+      "path": "/projekti/ngx-config",
+      "publicRepo": true,
+      "repoUrl": "https://github.com/Jamsek-m/ngx-config",
+      "version": "0.0.1",
+      "lastUpdate": "2019-11-21T21:56:00.000Z",
+      "thumbnail": "angular.png",
+      "images": [
+        "angular.png"
+      ],
+      "deployment": {
+        "type": "link",
+        "url": "https://www.npmjs.com/package/@mjamsek/ngx-config"
+      },
+      "translations": {
+        "en": {
+          "name": "Angular configuration library",
+          "shortDescription": "Library for runtime configuration of Angular applications.",
+          "description": "<p>Library for reading external configuration and applying it to Angular environment configuration. Instead of using harcoded environment object, library reads external JSON configuration (which can be server by the application itself) and overrides values in environment with those in external configuration. By using this library and tools like docker, we can deploy same docker image with different environment values to adjust app for different execution environments.</p><h3>Angular</h3><p><a href=\"https://angular.io/\" target=\"_blank\" rel=\"noreferrer noopener\">Angular</a> Angular is a platform for building mobile and desktop web applications.</p>"
+        },
+        "sl": {
+          "name": "Angular knjižnjica za konfiguracijo",
+          "shortDescription": "Knjižnica za uveljavljanje konfiguracije v izvajalnem času Angular aplikacij.",
+          "description": "<p>Knjižnica za branje zunanje konfiguracije in uveljavljanje le-te v Angular okoljski konfiguraciji. Namesto, da uporabljamo okoljski objekt iz kode, knjižnica prebere zunanjo JSON konfiguracijo (ki jo lahko strežemo skupaj z Angular aplikacijo) in vrednosti v okolju prepiše s temi iz zunanje konfiguracije. Z uporabo te knjižnice skupaj z orodji kot so Docker, lahko isto sliko Docker z različnimi okoljski vrednostmi namestimo v različna izvajalna okolja.</p><h3>Angular</h3><p><a href=\"https://angular.io/\" target=\"_blank\" rel=\"noreferrer noopener\">Angular</a> Angular je platforma za gradnjo mobilnih in namiznih spletnih aplikacij.</p>"
+        }
+      }
+    },
+    {
       "inProgress": true,
       "id": "tasker",
       "path": "/projekti/tasker",
