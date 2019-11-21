@@ -75,7 +75,7 @@
           "description": "<p>Library for authentication and authorization via Keycloak server of REST resources written with KumuluzEE framework.</p><h3>KumuluzEE</h3><p><a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">Kumuluzee</a> is a lightweight open-source framework for developing microservices using standard Java EE technologies and migrating Java EE to cloud-native architecture.</p><h3>Keycloak</h3><p><a href=\"https://www.keycloak.org/\" target=\"_blank\" rel=\"noreferrer noopener\">Keycloak</a> is an Open Source Identity and Access Management solution for modern Applications and Services.</p>"
         },
         "sl": {
-          "name": "KumuluzEE Keycloak integracijska knjižnjica",
+          "name": "KumuluzEE Keycloak integracijska knjižnica",
           "shortDescription": "Knjižnica za integracijo Keycloak avtentikacije z ogrodjem KumuluzEE",
           "description": "<p>Knjižnica za avtentikacijo in avtorizacijo REST virov pisanih v ogrodju KumuluzEE z Keycloak strežnikom.</p><h3>KumuluzEE</h3><p><a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">Kumuluzee</a> je preprosto odprtokodno ogrodje za razvoj mikrostoritev s standardnimi tehnologijami JavaEE in migracijo JavaEE v oblačno domorodno arhitekturo.</p><h3>Keycloak</h3><p><a href=\"https://www.keycloak.org/\" target=\"_blank\" rel=\"noreferrer noopener\">Keycloak</a> je odprtokodna rešitev za upravljanje identitete in dostopa za moderne aplikacije in storitve.</p>"
         }
@@ -103,7 +103,7 @@
           "description": "<p>Library for reading external configuration and applying it to Angular environment configuration. Instead of using harcoded environment object, library reads external JSON configuration (which can be server by the application itself) and overrides values in environment with those in external configuration. By using this library and tools like docker, we can deploy same docker image with different environment values to adjust app for different execution environments.</p><h3>Angular</h3><p><a href=\"https://angular.io/\" target=\"_blank\" rel=\"noreferrer noopener\">Angular</a> Angular is a platform for building mobile and desktop web applications.</p>"
         },
         "sl": {
-          "name": "Angular knjižnjica za konfiguracijo",
+          "name": "Angular knjižnica za konfiguracijo",
           "shortDescription": "Knjižnica za uveljavljanje konfiguracije v izvajalnem času Angular aplikacij.",
           "description": "<p>Knjižnica za branje zunanje konfiguracije in uveljavljanje le-te v Angular okoljski konfiguraciji. Namesto, da uporabljamo okoljski objekt iz kode, knjižnica prebere zunanjo JSON konfiguracijo (ki jo lahko strežemo skupaj z Angular aplikacijo) in vrednosti v okolju prepiše s temi iz zunanje konfiguracije. Z uporabo te knjižnice skupaj z orodji kot so Docker, lahko isto sliko Docker z različnimi okoljski vrednostmi namestimo v različna izvajalna okolja.</p><h3>Angular</h3><p><a href=\"https://angular.io/\" target=\"_blank\" rel=\"noreferrer noopener\">Angular</a> Angular je platforma za gradnjo mobilnih in namiznih spletnih aplikacij.</p>"
         }
