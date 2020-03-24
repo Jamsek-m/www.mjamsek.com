@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://www.mjamsek.com/projects.schema.json",
+  "title": "mJamsek",
+  "description": "mJamsek project schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "publicRepo": {
+      "type": "boolean"
+    },
+    "repoUrl": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "lastUpdate": {
+      "type": "string"
+    },
+    "deployment": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["link", "file"]
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "translations": {
+      "type": "object",
+      "$ref": "#/definitions/TranslationMap"
+    }
+  },
+  "definitions": {
+    "Translation": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "shortDescription": {
+          "type": "string"
+        }
+      }
+    },
+    "TranslationMap": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/Translation"
+      }
+    }
+  }
+}
