@@ -24,4 +24,9 @@ export const socialLinks = [
         url: "https://bitbucket.org/Jamsek-m/",
         icon: "bitbucket",
     },
+    {
+        label: "NPM",
+        url: "https://www.npmjs.com/~mjamsek",
+        icon: "npm"
+    }
 ];

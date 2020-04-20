@@ -12,7 +12,7 @@ import {
     faBitbucket,
     faGithub,
     faGitlab,
-    faLinkedinIn,
+    faLinkedinIn, faNpm,
     faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -25,6 +25,7 @@ export function initializeIcons() {
         faStackOverflow,
         faBitbucket,
         faGitlab,
+        faNpm,
         faArrowRight,
         faLink,
         faDownload,
