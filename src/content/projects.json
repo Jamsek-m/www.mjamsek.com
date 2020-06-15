@@ -32,12 +32,11 @@
       }
     },
     {
-      "inProgress": true,
       "id": "metrics-monitor",
       "path": "/projekti/metrics-monitor",
       "publicRepo": true,
       "repoUrl": "https://github.com/Jamsek-m/diploma-thesis",
-      "version": "0.0.1-SNAPSHOT",
+      "version": "1.0.0.Final",
       "lastUpdate": "2019-07-16T21:19:33.976Z",
       "deployment": {
         "type": "link",
