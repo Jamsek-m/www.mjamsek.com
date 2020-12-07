@@ -56,12 +56,12 @@
       }
     },
     {
-      "id": "kumuluzee-keycloak-integration-lib",
-      "path": "/projekti/kumuluzee-keycloak-integration-lib",
+      "id": "kee-auth",
+      "path": "/projekti/kee-auth",
       "publicRepo": true,
-      "repoUrl": "https://github.com/Jamsek-m/kumuluzee-keycloak-integration-lib",
-      "version": "1.3.0",
-      "lastUpdate": "2020-03-28T18:31:00.000Z",
+      "repoUrl": "https://github.com/Jamsek-m/kee-auth",
+      "version": "1.0.0",
+      "lastUpdate": "2020-08-18T18:31:00.000Z",
       "thumbnail": "kumuluzee.png",
       "images": [
         "kumuluzee.png",
@@ -69,17 +69,17 @@
       ],
       "deployment": {
         "type": "link",
-        "url": "https://github.com/Jamsek-m/kumuluzee-keycloak-integration-lib"
+        "url": "https://search.maven.org/artifact/com.mjamsek.auth/kee-auth"
       },
       "translations": {
         "en": {
-          "name": "KumuluzEE Keycloak integration library",
-          "shortDescription": "Library for integration of Keycloak authentication with KumuluzEE framework.",
+          "name": "KeeAuth Library",
+          "shortDescription": "Library for authentication via Keycloak in KumuluzEE web services.",
           "description": "<p>Library for authentication and authorization via Keycloak server of REST resources written with KumuluzEE framework.</p><h3>KumuluzEE</h3><p><a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">Kumuluzee</a> is a lightweight open-source framework for developing microservices using standard Java EE technologies and migrating Java EE to cloud-native architecture.</p><h3>Keycloak</h3><p><a href=\"https://www.keycloak.org/\" target=\"_blank\" rel=\"noreferrer noopener\">Keycloak</a> is an Open Source Identity and Access Management solution for modern Applications and Services.</p>"
         },
         "sl": {
-          "name": "Knjižnica za integracijo ogrodja KumuluzEE s Keycloak strežnikom",
-          "shortDescription": "Knjižnica za integracijo Keycloak avtentikacije z ogrodjem KumuluzEE",
+          "name": "Knjižnica KeeAuth",
+          "shortDescription": "Knjižnica za avtentikacijo preko Keycloak-a v storitvah, razvitih z KumuluzEE",
           "description": "<p>Knjižnica za avtentikacijo in avtorizacijo REST virov pisanih v ogrodju KumuluzEE z Keycloak strežnikom.</p><h3>KumuluzEE</h3><p><a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">Kumuluzee</a> je preprosto odprtokodno ogrodje za razvoj mikrostoritev s standardnimi tehnologijami JavaEE in migracijo JavaEE v oblačno domorodno arhitekturo.</p><h3>Keycloak</h3><p><a href=\"https://www.keycloak.org/\" target=\"_blank\" rel=\"noreferrer noopener\">Keycloak</a> je odprtokodna rešitev za upravljanje identitete in dostopa za moderne aplikacije in storitve.</p>"
         }
       }
