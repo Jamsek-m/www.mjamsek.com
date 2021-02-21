@@ -7,6 +7,7 @@ import {
     faDownload,
     faLink,
     faTimes,
+    faDatabase,
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faBitbucket,
@@ -32,7 +33,8 @@ export function initializeIcons() {
         faChevronLeft,
         faChevronRight,
         faChevronCircleLeft,
-        faChevronCircleRight
+        faChevronCircleRight,
+        faDatabase,
     ];
     icons.forEach(icon => {
         library.add(icon);

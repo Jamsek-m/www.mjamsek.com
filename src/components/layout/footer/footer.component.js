@@ -20,7 +20,7 @@ export class FooterComponent extends Component {
                         {socialLinks.map((link, index) => (
                             <div key={index} className="link">
                                 <a href={link.url} target="_blank" rel="noreferrer noopener" title={link.label}>
-                                    <FontAwesomeIcon icon={["fab", link.icon]}/>
+                                    <FontAwesomeIcon icon={link.icon}/>
                                 </a>
                             </div>
                         ))}
