@@ -1,0 +1,24 @@
+@import "../../styles/responsive";
+@import "../../styles/variables";
+
+.header {
+  padding: 40px 0;
+
+  h2 {
+    font-weight: 600;
+  }
+}
+.projects {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  @include device-specific($xs) {
+    width: 100%;
+  }
+  @include device-specific($md) {
+    width: 50%;
+  }
+}

@@ -1,0 +1,69 @@
+@import "../../styles/variables";
+@import "../../styles/responsive";
+
+.container {
+  height: $header-height;
+  background-color: $background-color;
+}
+
+.toggler {
+  margin-right: 25px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: flex-end !important;
+  padding: 0;
+  min-height: $header-height;
+
+  @include device-specific($xs) {
+    background-color: $background-color;
+  }
+}
+
+.collapsible {
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: flex-end !important;
+  align-items: center;
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  padding-right: 60px;
+  background-color: $background-color;
+}
+
+.navbar-item-active {
+  a {
+    color: $secondary-color !important;
+  }
+}
+
+.navbar-item {
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  a {
+    font-size: 1rem;
+    color: $text-color-white;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+.contact-anchor {
+  color: $text-color-white;
+  cursor: pointer;
+}

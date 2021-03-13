@@ -1,0 +1,16 @@
+$xs: '(max-width: 576px)';
+$sm: '(min-width: 576px)';
+$md: '(min-width: 768px)';
+$lg: '(min-width: 991px)';
+$xl: '(min-width: 1200px)';
+$xxl: '(min-width: 1400px)';
+
+$phone: '(max-width: 480px)';
+$tablet: '(min-width: 481px) and (max-width: 960px)';
+$pc: '(min-width: 961px)';
+
+@mixin device-specific($device) {
+  @media only screen and #{$device} {
+    @content
+  }
+}

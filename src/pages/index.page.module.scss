@@ -1,0 +1,71 @@
+@import "../../src/styles/variables";
+@import "../../src/styles/responsive";
+
+.header-container {
+  min-height: calc(100vh - #{$header-height});
+  background-color: $background-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  * {
+    color: $text-color-white !important;
+  }
+
+  @include device-specific($xs) {
+    padding: 0 25px 60px;
+  }
+  @include device-specific($sm) {
+    padding: 0 25px 60px;
+  }
+  @include device-specific($md) {
+    padding: 120px 25px 80px;
+  }
+  @include device-specific($lg) {
+    padding: 120px 0 80px;
+  }
+}
+
+.header-divider {
+  width: 100px;
+  @include device-specific($xs) {
+    display: none;
+  }
+  @include device-specific($sm) {
+    display: none;
+  }
+  @include device-specific($md) {
+    display: block;
+  }
+}
+
+.header-section {
+  display: flex;
+
+  @include device-specific($xs) {
+    width: 100% !important;
+  }
+  @include device-specific($sm) {
+    width: 100% !important;
+  }
+  @include device-specific($lg) {
+    width: 40% !important;
+    justify-content: flex-end;
+  }
+}
+
+.learn-more-section {
+  @include device-specific($xs) {
+    padding-top: $header-height - 20px;
+  }
+  @include device-specific($sm) {
+    padding-top: $header-height - 20px;
+  }
+  @include device-specific($md) {
+    padding-top: $header-height + 40px;
+  }
+}
+
+.references-section {
+  margin-bottom: 120px;
+}

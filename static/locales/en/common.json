@@ -1,0 +1,45 @@
+{
+	"footer": {
+		"contact": {
+			"alerts": {
+				"error": {
+					"text": "Error when sending message!"
+				},
+				"sent": {
+					"text": "Message sent!"
+				}
+			},
+			"button": {
+				"default": "Send",
+				"loading": "Sending..."
+			},
+			"errors": {
+				"email": "E-mail is mandatory!",
+				"message": "Message is mandatory!",
+				"name": "Name is mandatory!"
+			},
+			"fields": {
+				"email": "E-mail address",
+				"message": "Message",
+				"name": "Name"
+			},
+			"title": "Contact"
+		},
+		"copyright": "all rights reserved"
+	},
+	"meta": {
+		"projects": {
+			"title": "Projects"
+		},
+		"social": {
+			"title": "Social"
+		},
+		"title": "Title"
+	},
+	"nav": {
+		"contact": "Contact",
+		"home": "Home",
+		"projects": "Projects",
+		"social": "Social"
+	}
+}

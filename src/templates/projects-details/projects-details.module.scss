@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.page-container {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.default-container {
+  padding: 20px 0;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.project-tag {
+  margin-right: 10px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"code": {
+		"description": "Več o moji izvorni kodi na naslednjih straneh.",
+		"title": "Izvorna koda"
+	},
+	"others": {
+		"title": "Ostali profili"
+	},
+	"repos": {
+		"description": "Več o mojih artefaktih na naslednjih straneh.",
+		"title": "Repozitoriji"
+	},
+	"social-profiles": {
+		"contact-link": "kontaktni obrazec",
+		"description": "Več o meni in mojih projektih na naslednjih straneh. Za kontakt pa lahko uporabite tudi",
+		"title": "Družbeni profili"
+	}
+}

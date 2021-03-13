@@ -1,0 +1,18 @@
+{
+	"header": {
+		"about-me": {
+			"para": "Sem Miha Jamšek in študiram na Fakulteti za računalništvo in informatiko na Univerzi v Ljubljani. Tukaj najdete moje projekte in projekte pri katerih sem sodeloval. Nekateri so na voljo za prenos in v primeru, da si to želite vas vabim, da si jih prenesete. Na strani je tudi povezava do mojih ostalih spletnih profilov."
+		},
+		"title": "O meni"
+	},
+	"learn-more": {
+		"knowledge": {
+			"content": "S tehnološkega vidika se ukvarjam predvsem s spletnimi tehnologijami, tako zalednimi kot čelnimi. Za zaledni sistem uporabljam predvsem platformi Java (KumuluzEE/JavaEE and Spring MVC) in Node.js (Express), za čelni sistem pa Angular 10. Občasno se dotaknem tudi Scale, Kotlina, Pythona in C# na zalednem delu ter Vue.js in React (z GatsbyJS) na čelnem delu.",
+			"title": "Znanja & tehnologije"
+		},
+		"references": {
+			"content": "Po zaključeni osnovni šoli sem se vpisal na Tehniško gimnazijo na Šolskem centru Nova Gorica. Tekom srednješolskega študija sem dosegel nekaj priznanj na tekmovanjih iz matematike, logike, računalništva in računalniške pismenosti. Maturiral sem iz predmetov slovenščina, matematika, računalništvo, angleščina (B2 nivo) in fizika. Po maturi sem se vpisal na Fakulteto za računalništvo in informatiko, kjer študiram še danes. Ker programiram z velikim veseljem, veliko prostega časa namenim svojim projektom, v katerih včasih tudi eksperimentiram z novimi tehnologijami in načrtovalskimi vzorci, poleg tega pa tudi izboljšujem stare projekte z novimi idejami. V letu 2018 sem pričel tudi prispevati k odprtokodnemu spletnemu ogrodju KumuluzEE. Leta 2019 sem diplomiral in tako pridobil naziv diplomirani inženir računalništva in informatike (UN). Po diplomi sem se vpisal na podiplomski študij računalništva in informatike.",
+			"title": "Reference"
+		}
+	}
+}

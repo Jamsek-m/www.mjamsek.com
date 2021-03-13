@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+@import "../../styles/responsive";
+
+@mixin enforce-nohover {
+  background-color: $background-color !important;
+  border-color: $background-color !important;
+  box-shadow: none;
+  border: none;
+}
+
+.toggler {
+  @include enforce-nohover;
+
+  &:hover, &:focus, &:focus-visible, &:active {
+    @include enforce-nohover;
+  }
+}
+
+$dropdown-width: 80px;
+.lang-menu {
+  background-color: white;
+  width: $dropdown-width;
+  min-width: $dropdown-width;
+  max-width: $dropdown-width;
+}
+
+.lang-menu-item {
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    /*width: 25px;
+    height: 25px;*/
+  }
+
+  span {
+    display: inline-block;
+    margin-left: 10px;
+    color: black;
+    font-weight: 600;
+    min-width: 25px;
+  }
+}

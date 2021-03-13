@@ -1,0 +1,29 @@
+@import "../../../../../styles/variables";
+@import "../../../../../styles/responsive";
+
+.item-link {
+  width: 75%;
+
+  margin-bottom: 40px;
+  border: 1px solid $grey_200;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include device-specific($phone) {
+    width: 100%;
+  }
+}
+
+.link-elem {
+  display: block;
+  padding: 15px 25px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

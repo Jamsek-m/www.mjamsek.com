@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.tag {
+  // common:
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  @include no-select();
+  // colors:
+  background-color: $grey_200;
+  color: black;
+  // default size (overridden by 'small' flag):
+  font-size: 16px;
+  height: 35px;
+  padding: 0 10px;
+}
+
+.tag-small {
+  // small size:
+  font-size: 12px;
+  height: 25px;
+  padding: 0 8px;
+}

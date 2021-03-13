@@ -1,0 +1,29 @@
+@import "./variables";
+
+$light-tag-text: $text-color-white;
+$dark-tag-text: $text-color-black;
+
+$security-ng: purple;
+$kumuluzee-bg: #155bfb;
+$microprofile-bg: #FAB331;
+$library-bg: #066906;
+
+.tag-security {
+  background-color: $security-ng !important;
+  color: $light-tag-text !important;
+}
+
+.tag-kumuluzee {
+  background-color: $kumuluzee-bg !important;
+  color: $light-tag-text !important;
+}
+
+.tag-microprofile {
+  background-color: $microprofile-bg !important;
+  color: $light-tag-text !important;
+}
+
+.tag-library {
+  background-color: $library-bg !important;
+  color: $light-tag-text !important;
+}

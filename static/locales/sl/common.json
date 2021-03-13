@@ -1,0 +1,45 @@
+{
+	"footer": {
+		"contact": {
+			"alerts": {
+				"error": {
+					"text": "Napaka pri pošiljanju sporočila!"
+				},
+				"sent": {
+					"text": "Sporočilo poslano!"
+				}
+			},
+			"button": {
+				"default": "Pošlji",
+				"loading": "Pošiljanje..."
+			},
+			"errors": {
+				"email": "Elektronski naslov je zahtevano polje!",
+				"message": "Sporočilo je zahtevano polje!",
+				"name": "Ime je zahtevano polje!"
+			},
+			"fields": {
+				"email": "Elektronski naslov",
+				"message": "Sporočilo",
+				"name": "Ime"
+			},
+			"title": "Kontakt"
+		},
+		"copyright": "vse pravice pridržane"
+	},
+	"meta": {
+		"projects": {
+			"title": "Projekti"
+		},
+		"social": {
+			"title": "Družbeno"
+		},
+		"title": "Naslov"
+	},
+	"nav": {
+		"contact": "Kontakt",
+		"home": "Domov",
+		"projects": "Projekti",
+		"social": "Družbeno"
+	}
+}

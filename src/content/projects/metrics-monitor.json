@@ -1,0 +1,9 @@
+{
+    "id": "metrics-monitor",
+    "position": 100,
+    "path": "/metrics-monitor",
+    "title": "projects:projects.metrics-monitor.name",
+    "description": "projects:projects.metrics-monitor.description",
+    "tags": ["Library","Diploma thesis"],
+    "fullDescription": "projects:projects.metrics-monitor.full-description"
+}

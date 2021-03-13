@@ -1,0 +1,21 @@
+{
+    "id": "kee-auth",
+    "position": 10,
+    "path": "/kee-auth",
+    "title": "projects:projects.kee-auth.name",
+    "description": "projects:projects.kee-auth.description",
+    "tags": [
+        "Library",
+        "Security",
+        "KumuluzEE"
+    ],
+    "fullDescription": "projects:projects.kee-auth.full-description",
+    "distribution": {
+        "type": "link",
+        "url": "https://mvnrepository.com/artifact/com.mjamsek.auth/kee-auth"
+    },
+    "repository": {
+        "provider": "github",
+        "url": "kee-auth"
+    }
+}

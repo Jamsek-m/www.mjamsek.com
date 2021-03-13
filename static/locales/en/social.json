@@ -1,0 +1,18 @@
+{
+	"code": {
+		"description": "More about my source code can be found on these pages.",
+		"title": "Source code"
+	},
+	"others": {
+		"title": "Other profiles"
+	},
+	"repos": {
+		"description": "More about my artifacts can be found on these pages.",
+		"title": "Repositories"
+	},
+	"social-profiles": {
+		"contact-link": "contact form",
+		"description": "More about me and my projects can be found on these pages. If you want to get in touch, you can also use",
+		"title": "Social profiles"
+	}
+}

@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+@import "../../styles/responsive";
+
+
+.container-padding {
+  padding-bottom: 60px;
+}
+
+.container {
+  background-color: $primary-color;
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+
+  * {
+    color: $text-color-white;
+  }
+}
+
+.content {
+  width: 100%;
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 20px 0;
+}
+
+.social-link {
+  margin-right: 40px;
+  font-size: 32px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact-form {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  color: $text-color-white;
+  padding-bottom: 40px;
+}

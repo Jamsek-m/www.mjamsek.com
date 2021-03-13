@@ -1,0 +1,22 @@
+{
+	"meta": {
+		"title": "Projects"
+	},
+	"projects": {
+		"kee-auth": {
+			"description": "Library for authentication via Keycloak in KumuluzEE web services.",
+			"full-description": "KeeAuth Full description",
+			"name": "KeeAuth Library"
+		},
+		"metrics-monitor": {
+			"description": "Monitor for Real User Monitoring for Single Page Applications",
+			"full-description": "MM Full description",
+			"name": "MetricsMonitor"
+		},
+		"rest-client": {
+			"description": "Implementation of MicroProfile RestClient 1.4.1 for KumuluzEE framework.",
+			"full-description": "RC Full description",
+			"name": "KumuluzEE MicroProfile Rest Client"
+		}
+	}
+}

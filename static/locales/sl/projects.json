@@ -1,0 +1,22 @@
+{
+	"meta": {
+		"title": "Projekti"
+	},
+	"projects": {
+		"kee-auth": {
+			"description": "Knjižnica za avtentikacijo s Keycloak-om v KumuluzEE storitvah.",
+			"full-description": "KeeAuth Poln opis",
+			"name": "Knjižnica KeeAuth"
+		},
+		"metrics-monitor": {
+			"description": "Kontrolor za spremljanje uporabniških metrik v realnem času (RUM) za aplikacije na eni strani (SPA)",
+			"full-description": "MM Poln opis",
+			"name": "MetricsMonitor"
+		},
+		"rest-client": {
+			"description": "Implementacija MicroProfile RestClienta 1.4.1 za ogrodje KumuluzEE.",
+			"full-description": "RC Poln opis",
+			"name": "KumuluzEE MicroProfile Rest Client"
+		}
+	}
+}

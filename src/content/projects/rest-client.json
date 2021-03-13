@@ -1,0 +1,9 @@
+{
+    "id": "rest-client",
+    "position": 15,
+    "path": "/kumuluzee-mp-rest-client",
+    "title": "projects:projects.rest-client.name",
+    "description": "projects:projects.rest-client.description",
+    "tags": ["Library", "REST", "KumuluzEE", "MicroProfile"],
+    "fullDescription": "projects:projects.rest-client.full-description"
+}
