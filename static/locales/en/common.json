@@ -1,4 +1,8 @@
 {
+	"404": {
+		"message": "Requested page not found!",
+		"title": "404 Error!"
+	},
 	"footer": {
 		"contact": {
 			"alerts": {

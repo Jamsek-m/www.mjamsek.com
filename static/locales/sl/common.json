@@ -1,4 +1,8 @@
 {
+	"404": {
+		"message": "Zahtevana stran ne obstaja!",
+		"title": "Napaka 404!"
+	},
 	"footer": {
 		"contact": {
 			"alerts": {
