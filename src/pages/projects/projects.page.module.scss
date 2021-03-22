@@ -22,3 +22,20 @@
     width: 50%;
   }
 }
+
+.project-tags {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 0;
+  width: 100%;
+}
+.project-tag {
+  margin-right: 10px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

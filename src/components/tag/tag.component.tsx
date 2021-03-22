@@ -1,6 +1,6 @@
 import React from "react";
 
-import { tag as tagStyle, tagSmall } from "./tag.module.scss";
+import { tag as tagStyle, tagSmall, disabled as disabledStyle } from "./tag.module.scss";
 
 interface TagProps {
     label: string;
@@ -10,6 +10,7 @@ interface TagProps {
     clickable?: boolean;
     onClick?: (value: string) => void;
     backgroundColor?: string;
+    disabled: boolean;
 }
 
 export const Tag = (props: TagProps) => {
@@ -20,6 +21,7 @@ export const Tag = (props: TagProps) => {
         clickable,
         onClick: onClickProp,
         backgroundColor,
+        disabled,
         className: classNameProp
     } = props;
     
@@ -38,7 +40,7 @@ export const Tag = (props: TagProps) => {
     }
     
     return (
-        <span onClick={onClick} className={`${tagStyle} ${classNameProp} ${small ? tagSmall : ""} tag-${value}`}
+        <span onClick={onClick} className={`${tagStyle} ${classNameProp} ${small ? tagSmall : ""} tag-${value} ${disabled ? disabledStyle : ""}`}
             style={componentStyle}>
             {label}
         </span>
@@ -48,5 +50,6 @@ export const Tag = (props: TagProps) => {
 Tag.defaultProps = {
     small: true,
     clickable: true,
-    className: ""
+    className: "",
+    disabled: false,
 };

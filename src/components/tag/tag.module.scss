@@ -17,6 +17,10 @@
   padding: 0 10px;
 }
 
+.disabled {
+  opacity: 0.5 !important;
+}
+
 .tag-small {
   // small size:
   font-size: 12px;
