@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { GitHubData, GitProvider, Project } from "../../types";
+import { GitHubData, GitHubRepository, GitProvider, Project } from "../../types";
 import { useTranslation } from "react-i18next";
 import { Layout, PageContainer, Seo } from "../../components";
 import { ProjectContent, ProjectsIds } from "../../content";
@@ -17,14 +17,13 @@ import {
     projectTag,
     projectTags,
     repositoryContainer,
-    releasesContainer,
+    releasesContainer
 } from "./projects-details.module.scss";
 import { Versions } from "../../components/versions/versions.component";
 import { Distribution } from "../../components/distribution/distribution.component";
 import { Repository } from "../../components/repository/repository.component";
 import { GitHubRepo } from "../../components/repository/github/github-repo.component";
 import { Gallery } from "../../components/gallery/gallery.component";
-import { hasGitHubData } from "../../utils";
 import { GithubVersions } from "../../components/versions/github-versions/github-versions.component";
 
 interface ProjectDetailsPageProps {
@@ -34,15 +33,15 @@ interface ProjectDetailsPageProps {
     };
     pageContext: {
         projectId: string;
-        githubHandle?: string;
+        github: GitHubRepository | null;
     }
 }
 
 const ProjectDetailsTemplate = (props: ProjectDetailsPageProps) => {
     const { data, pageContext } = props;
-    const { projectsJson: project, github } = data;
+    const { projectsJson: project } = data;
+    const { github } = pageContext;
     const { t } = useTranslation();
-    console.log(github);
     
     return (
         <Layout>
@@ -65,13 +64,10 @@ const ProjectDetailsTemplate = (props: ProjectDetailsPageProps) => {
                     <h2>{t(project.title)}</h2>
                     
                     {/* RELEASES - if github repo, handle different */}
-                    {(!project.releases || project.releases.length === 0) && hasGitHubData(github) && (
+                    {(!project.releases || project.releases.length === 0) && github !== null && (
                         <div className={releasesContainer}>
-                            {github.organization && github.organization.repository && (
-                                <GithubVersions repository={github.organization.repository}/>
-                            )}
-                            {github.user && github.user.repository && (
-                                <GithubVersions repository={github.user.repository}/>
+                            {github && (
+                                <GithubVersions repository={github}/>
                             )}
                         </div>
                     )}
@@ -96,7 +92,7 @@ const ProjectDetailsTemplate = (props: ProjectDetailsPageProps) => {
                         <div className={defaultContainer}
                             dangerouslySetInnerHTML={{ __html: t(project.fullDescription) }}/>
                     )}
-    
+                    
                     {/* IMAGES */}
                     {project.images && project.images.length > 0 && (
                         <div className={galleryContainer}>
@@ -116,11 +112,8 @@ const ProjectDetailsTemplate = (props: ProjectDetailsPageProps) => {
                     <div className={repositoryContainer}>
                         
                         {project.repository && project.repository.provider === GitProvider.GITHUB && (
-                            hasGitHubData(github) ? (
-                                <GitHubRepo
-                                    user={github.user.repository}
-                                    organization={github.organization?.repository}
-                                />
+                            github !== null ? (
+                                <GitHubRepo repo={github}/>
                             ) : (
                                 <Repository repository={project.repository}
                                     name={t(project.title)}
@@ -143,7 +136,7 @@ const ProjectDetailsTemplate = (props: ProjectDetailsPageProps) => {
 };
 
 export const query = graphql`
-    query($language: String!, $projectId: String!, $githubLogin: String!, $githubOrgLogin: String!, $githubHandle: String!) {
+    query($language: String!, $projectId: String!) {
         locales: allLocale(filter: {language: {eq: $language}}) {
             edges {
                 node {
@@ -177,82 +170,6 @@ export const query = graphql`
                 releaseDate
                 snapshot
                 latest
-            }
-        }
-        github {
-            organization(login: $githubOrgLogin) {
-                repository(name: $githubHandle) {
-                    url
-                    description
-                    isPrivate
-                    issues {
-                        totalCount
-                    }
-                    licenseInfo {
-                        name
-                        url
-                    }
-                    name
-                    owner {
-                        login
-                    }
-                    latestRelease {
-                        url
-                        isLatest
-                        isPrerelease
-                        name
-                        descriptionHTML
-                        publishedAt
-                    }
-                    releases(last: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
-                        totalCount
-                        nodes {
-                            url
-                            isLatest
-                            isPrerelease
-                            name
-                            descriptionHTML
-                            publishedAt
-                        }
-                    }
-                }
-            }
-            user(login: $githubLogin) {
-                repository(name: $githubHandle) {
-                    url
-                    description
-                    isPrivate
-                    issues {
-                        totalCount
-                    }
-                    licenseInfo {
-                        name
-                        url
-                    }
-                    name
-                    owner {
-                        login
-                    }
-                    latestRelease {
-                        url
-                        isLatest
-                        isPrerelease
-                        name
-                        descriptionHTML
-                        publishedAt
-                    }
-                    releases(last: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
-                        totalCount
-                        nodes {
-                            url
-                            isLatest
-                            isPrerelease
-                            name
-                            descriptionHTML
-                            publishedAt
-                        }
-                    }
-                }
             }
         }
     }

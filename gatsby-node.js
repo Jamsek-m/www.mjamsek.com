@@ -1,3 +1,4 @@
+const githubApi = require("./github.api");
 const path = require("path")
 
 exports.createSchemaCustomization = ({ actions }) => {
@@ -61,17 +62,27 @@ exports.createPages = async({ actions, graphql, reporter }) => {
         return
     }
     
-    result.data.allProjectsJson.nodes.forEach(node => {
+    const github = githubApi(graphql);
+    
+    const pages = result.data.allProjectsJson.nodes.map(async node => {
+        
+        let repo = null;
+        if (node.repository && node.repository.organization) {
+            repo = await github.getOrganization(node.repository.organization, node.repository.url);
+        } else if (node.repository && node.repository.url) {
+            repo = await github.getUser(process.env.GITHUB_LOGIN, node.repository.url);
+        }
+        
         createPage({
             path: "/projects" + node.path,
             component: projectTemplate,
             context: {
+                github: repo,
                 projectId: node.id,
-                githubHandle: (node.repository && node.repository.url) || "",
-                githubLogin: process.env.GITHUB_LOGIN,
-                githubOrgLogin: (node.repository && node.repository.organization) || ""
             }
         })
     })
+    
+    await Promise.all(pages)
 }
 

@@ -26,7 +26,6 @@ export const Link = (props: LinkProps) => {
             <span {...otherProps(props, propsKeys) as HTMLAttributes<HTMLSpanElement>} onClick={() => {
                 const elem: HTMLHeadingElement | null = document.querySelector(to);
                 if (elem) {
-                    console.log("ELEM: ", elem);
                     elem.scrollIntoView({
                         behavior: "smooth",
                         block: "start",

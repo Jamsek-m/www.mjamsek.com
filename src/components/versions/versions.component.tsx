@@ -17,7 +17,6 @@ interface VersionsProps {
 
 export const Versions = (props: VersionsProps) => {
     const { versions } = props;
-    console.log(versions);
     const { t } = useTranslation();
     const [opened, toggleOpened] = useState<boolean>(false);
     
