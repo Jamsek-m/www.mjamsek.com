@@ -1,78 +1,41 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer } from "react";
 import { graphql } from "gatsby";
 import { useTranslation } from "react-i18next";
 
-import { ProjectSimple } from "../../types";
 import { Layout, PageContainer, Seo } from "../../components";
 import { ProjectCard } from "../../components/project-card/project-card.component";
-
-import {
-    projects as projectsStyle,
-    header,
-    projectItem,
-    projectTags,
-    projectTag
-} from "./projects.page.module.scss";
 import { Tag } from "../../components/tag/tag.component";
 
-interface ProjectsPageProps {
-    data: {
-        allProjectsJson: {
-            nodes: ProjectSimple[];
-        };
-    };
-}
+import { ProjectsPageProps, ProjectsStateStatus, StateActionType } from "./project.page.types";
+import { projectsReducer } from "./projects.page.controller";
+
+import { header, projectItem, projects as projectsStyle, projectTag, projectTags } from "./projects.page.module.scss";
+
 
 const ProjectsPage = (props: ProjectsPageProps) => {
     const { t } = useTranslation();
     
-    const getAllTags = (): string[] => {
-        const filterFunc = (value: string, index: number, self: string[]) => {
-            return self.indexOf(value) === index;
-        };
-        return props.data.allProjectsJson.nodes
-            .map(node => node.tags)
-            .flat()
-            .filter(filterFunc);
-    };
-    
-    const [tags, setTags] = useState<string[]>([]);
-    const [selectedTags, setSelectedTags] = useState<Map<string, null>>(new Map());
-    const [projects, setProjects] = useState<ProjectSimple[]>(props.data.allProjectsJson.nodes);
+    const [projectsState, dispatchProjects] = useReducer(projectsReducer(props), {
+        tags: [],
+        projects: [],
+        selectedTags: new Map<string, null>(),
+        status: ProjectsStateStatus.EMPTY
+    });
     
     useEffect(() => {
-        let componentMounted = true;
-        if (componentMounted) {
-            setTags(getAllTags);
-        }
-        return () => {
-            componentMounted = false;
-        };
+        dispatchProjects({
+            type: StateActionType.INIT
+        });
     }, []);
     
     const toggleTags = (tag: string) => {
         return () => {
-            let copy = new Map<string, null>(selectedTags);
-            if (copy.has(tag)) {
-                copy.delete(tag);
-            } else {
-                copy.set(tag, null);
-            }
-            setSelectedTags(copy);
+            dispatchProjects({
+                type: StateActionType.UPDATE_TAGS,
+                selectedTag: tag
+            });
         };
     };
-    
-    useEffect(() => {
-        if (selectedTags.size > 0) {
-            const filteredProjects = props.data.allProjectsJson.nodes.filter(project => {
-                const matchingTags = project.tags.filter(tag => selectedTags.has(tag));
-                return matchingTags.length > 0;
-            });
-            setProjects(filteredProjects);
-        } else {
-            setProjects(props.data.allProjectsJson.nodes);
-        }
-    }, [selectedTags]);
     
     return (
         <Layout>
@@ -83,11 +46,11 @@ const ProjectsPage = (props: ProjectsPageProps) => {
                 </div>
                 
                 <div className={projectTags}>
-                    {tags.map((tag, index) => (
+                    {projectsState.tags.map((tag, index) => (
                         <Tag key={index}
                             value={tag.toLowerCase()}
                             label={tag}
-                            disabled={!selectedTags.has(tag)}
+                            disabled={!projectsState.selectedTags.has(tag)}
                             onClick={toggleTags(tag)}
                             small={false}
                             className={projectTag}
@@ -96,7 +59,7 @@ const ProjectsPage = (props: ProjectsPageProps) => {
                 </div>
                 
                 <div className={projectsStyle}>
-                    {projects.map((project, index) => (
+                    {projectsState.projects.map((project, index) => (
                         <div key={index} className={projectItem}>
                             <ProjectCard project={project} key={index}/>
                         </div>
