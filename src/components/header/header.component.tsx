@@ -31,7 +31,14 @@ export const Header = () => {
     const isActive = (url: string): boolean => {
         if (typeof window !== "undefined") {
             const path = window.location.pathname;
-            return path.endsWith(url);
+            if (url === "/" && path === "/") {
+                return true;
+            } else {
+                if (url === "/") {
+                    return false;
+                }
+                return path.includes(url);
+            }
         }
         return false;
     };
