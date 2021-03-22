@@ -17,6 +17,14 @@
   width: 60%;
 }
 
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-bottom: 60px;
+}
+
 .social-link-item {
   padding: 25px;
 

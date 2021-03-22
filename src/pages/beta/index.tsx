@@ -7,6 +7,7 @@ import {
     content,
     socialLinkItem,
     betaProject,
+    socialLinks
 } from "./beta.page.module.scss";
 import { REPOSITORIES_LINKS } from "../../config/social.config";
 import { SocialCard } from "../../components/social-card/social-card.component";
@@ -19,6 +20,7 @@ const BetaPage = (_: BetaPageProps) => {
     const { t } = useTranslation();
     
     const betaMaven = REPOSITORIES_LINKS(t).find(repo => repo.id === "mjamsek_beta");
+    const betaNpm = REPOSITORIES_LINKS(t).find(repo => repo.id === "mjamsek-npm-beta");
     
     return (
         <Layout>
@@ -35,9 +37,12 @@ const BetaPage = (_: BetaPageProps) => {
                     <div className={betaProject}>
                         <h4>{t("beta:java.title")}</h4>
                         <p>{t("beta:java.description")}:</p>
-                        <div>
+                        <div className={socialLinks}>
                             <div className={socialLinkItem}>
                                 <SocialCard socialLink={betaMaven!}/>
+                            </div>
+                            <div className={socialLinkItem}>
+                                <SocialCard socialLink={betaNpm!}/>
                             </div>
                         </div>
                     </div>

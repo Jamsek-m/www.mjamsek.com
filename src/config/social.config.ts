@@ -56,6 +56,12 @@ export const REPOSITORIES_LINKS: SocialLinks = (t) => [
         url: "https://nexus.mjamsek.com/#browse/browse:mjamsek-beta",
         label: "mJamsek Beta",
         image: nexusIcon
+    },
+    {
+        id: "mjamsek-npm-beta",
+        url: "https://nexus.mjamsek.com/#browse/browse:mjamsek-npm-beta",
+        label: "mJamsek NPM Beta",
+        image: nexusIcon,
     }
 ];
 
