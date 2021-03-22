@@ -1,4 +1,4 @@
-import { ProjectSimple } from "../../types";
+import { ProjectSimple } from "./project.types";
 
 export interface ProjectsPageProps {
     data: {

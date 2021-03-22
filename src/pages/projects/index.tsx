@@ -5,9 +5,8 @@ import { useTranslation } from "react-i18next";
 import { Layout, PageContainer, Seo } from "../../components";
 import { ProjectCard } from "../../components/project-card/project-card.component";
 import { Tag } from "../../components/tag/tag.component";
-
-import { ProjectsPageProps, ProjectsStateStatus, StateActionType } from "./project.page.types";
-import { projectsReducer } from "./projects.page.controller";
+import { ProjectsPageProps, ProjectsStateStatus, StateActionType } from "../../types/projects.page.types";
+import { projectsReducer } from "../../controllers/projects.controller";
 
 import { header, projectItem, projects as projectsStyle, projectTag, projectTags } from "./projects.page.module.scss";
 

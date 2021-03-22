@@ -1,11 +1,10 @@
-import { ProjectSimple } from "../../types";
+import { ProjectSimple } from "../types";
 import {
     ProjectsPageProps,
     ProjectsState,
-    ProjectsStateAction,
-    ProjectsStateStatus,
+    ProjectsStateAction, ProjectsStateStatus,
     StateActionType
-} from "./project.page.types";
+} from "../types/projects.page.types";
 
 
 export function projectsReducer(props: ProjectsPageProps) {
