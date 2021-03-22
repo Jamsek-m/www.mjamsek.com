@@ -32,6 +32,9 @@
 		"copyright": "vse pravice pridržane"
 	},
 	"meta": {
+		"beta": {
+			"title": "Beta"
+		},
 		"projects": {
 			"title": "Projekti"
 		},

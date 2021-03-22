@@ -13,13 +13,9 @@ type ProjectContentDef = Partial<Record<ProjectsIds, RenderProjectFunc>>;
 
 export const ProjectContent: ProjectContentDef = {
     [ProjectsIds.KEE_AUTH]: (project, t) => (
-        <p>
-            {t(project.fullDescription)}
-        </p>
+        <div dangerouslySetInnerHTML={{__html: t(project.fullDescription)}} />
     ),
     [ProjectsIds.REST_CLIENT]: (project, t) => (
-        <p>
-            {t(project.fullDescription)}
-        </p>
+        <div dangerouslySetInnerHTML={{__html: t(project.fullDescription)}} />
     ),
 };

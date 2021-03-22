@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.gallery-component {
+  width: auto;
+  height: auto;
+}
+
+.bullet {
+  background: $primary-color !important;
+  border: none !important;
+  box-shadow: none !important;
+}

@@ -4,6 +4,7 @@ import { TFunction } from "react-i18next";
 export type SocialLinks = (t: TFunction<string>) => SocialLink[];
 
 export interface SocialLink {
+    id: string;
     url: string;
     label: string;
     icon?: IconProp;

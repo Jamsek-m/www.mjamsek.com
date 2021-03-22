@@ -38,10 +38,14 @@
   }
 }
 
-.contact-form {
+.contact-form-container {
+  margin-top: 20px;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
+}
+.contact-form {
+  width: 50%;
 }
 
 .copyright {

@@ -1,0 +1,10 @@
+{
+	"intro": {
+		"para": "For some of my products, I offer a beta version that has the latest features, however, its content may change without notice and break existing program, as I do not guarantee stable beta version.",
+		"title": "Beta projects"
+	},
+	"java": {
+		"description": "Libraries for Java platform, available in beta program",
+		"title": "Java libraries"
+	}
+}

@@ -5,18 +5,35 @@
 	"projects": {
 		"kee-auth": {
 			"description": "Knjižnica za avtentikacijo s Keycloak-om v KumuluzEE storitvah.",
-			"full-description": "KeeAuth Poln opis",
+			"full-description": "<p>Knjižnica za avtentikacijo in avtorizacijo REST virov pisanih v ogrodju KumuluzEE z Keycloak strežnikom.</p><h3>KumuluzEE</h3><p><a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">Kumuluzee</a> je preprosto odprtokodno ogrodje za razvoj mikrostoritev s standardnimi tehnologijami JavaEE in migracijo JavaEE v oblačno domorodno arhitekturo.</p><h3>Keycloak</h3><p><a href=\"https://www.keycloak.org/\" target=\"_blank\" rel=\"noreferrer noopener\">Keycloak</a> je odprtokodna rešitev za upravljanje identitete in dostopa za moderne aplikacije in storitve.</p>",
 			"name": "Knjižnica KeeAuth"
 		},
 		"metrics-monitor": {
 			"description": "Kontrolor za spremljanje uporabniških metrik v realnem času (RUM) za aplikacije na eni strani (SPA)",
-			"full-description": "MM Poln opis",
+			"full-description": "Študijski projekt za diplomsko delo - platforma za spremljanje metrik aplikacij na eni strani.",
 			"name": "MetricsMonitor"
 		},
 		"rest-client": {
 			"description": "Implementacija MicroProfile RestClienta 1.4.1 za ogrodje KumuluzEE.",
-			"full-description": "RC Poln opis",
+			"full-description": "<p>Kot del projekta \"Razvoj mikrostoritev za podporo tehnologijam veriženja blokov (blockchain) in aplikacija na domeno CRM sistemov (akronim MBCRM)\" sem implementiral MicroProfile specifikacijo RestClient-a za platformo <a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">KumuluzEE</a>.</p><h3>MicroProfile</h3><p><a href=\"https://microprofile.io/\" target=\"_blank\">MicroProfile</a> je odprtokodna JavaEE specifikacija usmerjena v mikrostoritveno arhitekturo</p>",
 			"name": "KumuluzEE MicroProfile Rest Client"
+		}
+	},
+	"sections": {
+		"distribution": {
+			"file-title": "Prenos",
+			"link-title": "Na voljo v"
+		},
+		"license": {
+			"title": "LICENCA"
+		},
+		"versions": {
+			"latest": {
+				"title": "Zadnja verzija"
+			},
+			"others": {
+				"title": "Ostale verzije"
+			}
 		}
 	}
 }

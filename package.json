@@ -7,6 +7,7 @@
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
+        "develop:clean": "npm run clean && npm run develop",
         "lint": "tslint --fix",
         "start": "npm run develop",
         "serve": "gatsby serve",
@@ -39,6 +40,7 @@
         "gatsby-transformer-json": "^3.0.0",
         "gatsby-transformer-remark": "~3.0.0",
         "gatsby-transformer-sharp": "~3.0.0",
+        "graphql": "^15.5.0",
         "i18next": "~19.9.1",
         "i18next-browser-languagedetector": "~6.0.1",
         "i18next-http-backend": "~1.1.1",
@@ -50,6 +52,8 @@
         "react-ga": "~3.3.0",
         "react-helmet": "~6.1.0",
         "react-i18next": "~11.8.9",
+        "react-image-gallery": "^1.0.9",
+        "react-tooltip": "^4.2.15",
         "reactstrap": "~8.9.0"
     },
     "devDependencies": {
@@ -58,6 +62,7 @@
         "@types/react": "^16.9.56",
         "@types/react-dom": "^17.0.1",
         "@types/react-helmet": "^6.1.0",
+        "@types/react-image-gallery": "^1.0.2",
         "@types/reactstrap": "^8.7.2",
         "tslint": "^6.1.3",
         "tslint-loader": "^3.5.4",

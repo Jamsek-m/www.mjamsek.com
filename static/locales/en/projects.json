@@ -5,18 +5,35 @@
 	"projects": {
 		"kee-auth": {
 			"description": "Library for authentication via Keycloak in KumuluzEE web services.",
-			"full-description": "KeeAuth Full description",
+			"full-description": "<p>Library for authentication and authorization via Keycloak server of REST resources written with KumuluzEE framework.</p><h3>KumuluzEE</h3><p><a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">Kumuluzee</a> is a lightweight open-source framework for developing microservices using standard Java EE technologies and migrating Java EE to cloud-native architecture.</p><h3>Keycloak</h3><p><a href=\"https://www.keycloak.org/\" target=\"_blank\" rel=\"noreferrer noopener\">Keycloak</a> is an Open Source Identity and Access Management solution for modern Applications and Services.</p>",
 			"name": "KeeAuth Library"
 		},
 		"metrics-monitor": {
 			"description": "Monitor for Real User Monitoring for Single Page Applications",
-			"full-description": "MM Full description",
+			"full-description": "Case study project for my diploma thesis - a platform for monitoring metrics for single page applications.",
 			"name": "MetricsMonitor"
 		},
 		"rest-client": {
 			"description": "Implementation of MicroProfile RestClient 1.4.1 for KumuluzEE framework.",
-			"full-description": "RC Full description",
+			"full-description": "<p>As part of project \"Development of microservices for blockchain support and application in CRM system domains (MBCRM)\" I implemented MicroProfile specification for RestClient for <a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">Kumuluzee</a> platform.</p><h3>MicroProfile</h3><p><a href=\"https://microprofile.io/\" target=\"_blank\" rel=\"noreferrer noopener\">MicroProfile</a> is an open-source JavaEE specification oriented towards microservice architecture</p>",
 			"name": "KumuluzEE MicroProfile Rest Client"
+		}
+	},
+	"sections": {
+		"distribution": {
+			"file-title": "Download",
+			"link-title": "Available in"
+		},
+		"license": {
+			"title": "LICENSE"
+		},
+		"versions": {
+			"latest": {
+				"title": "Latest version"
+			},
+			"others": {
+				"title": "Other releases"
+			}
 		}
 	}
 }

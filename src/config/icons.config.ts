@@ -4,7 +4,8 @@ import {
     faBitbucket,
     faGithub,
     faGitlab,
-    faLinkedinIn, faNpm,
+    faLinkedinIn,
+    faNpm,
     faStackOverflow
 } from "@fortawesome/free-brands-svg-icons";
 import {

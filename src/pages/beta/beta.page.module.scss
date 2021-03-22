@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+@import "../../styles/responsive";
+
+.header {
+  padding: 40px 0;
+
+  h2 {
+    font-weight: 600;
+  }
+}
+
+.container {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.content {
+  width: 60%;
+}
+
+.social-link-item {
+  padding: 25px;
+
+  @include device-specific($xs) {
+    width: 100%;
+  }
+  @include device-specific($sm) {
+    width: 50%;
+  }
+}
+
+.beta-project {
+  margin-top: 40px;
+}

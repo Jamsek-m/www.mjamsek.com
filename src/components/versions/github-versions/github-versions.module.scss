@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import "../../../styles/variables";
 
 .container {
   width: 40%;
@@ -7,11 +7,11 @@
 .latest {
   color: $primary-color;
   cursor: pointer;
+
   border: 1px solid $grey-300;
   border-radius: 5px;
   padding: 15px;
 }
-
 .only-latest {
   cursor: default !important;
 }

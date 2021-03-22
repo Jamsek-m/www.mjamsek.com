@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.container {
+  padding: 25px;
+  border-radius: 5px;
+  border: 1px solid $grey_200;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  margin-right: 20px;
+}
+.name-container {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.desc {
+  padding-top: 10px;
+  color: $grey-300;
+}

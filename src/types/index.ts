@@ -25,5 +25,8 @@ export type {
 
 export type {
     GitHubRepository,
-    GitHubData
+    GitHubData,
+    GitHubLicenseInfo,
+    GitHubOwner,
+    GitHubRelease,
 } from "./repo.types";

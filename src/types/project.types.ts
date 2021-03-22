@@ -16,6 +16,7 @@ export enum DistributionType {
 export interface ProjectDistribution {
     type: DistributionType;
     url: string;
+    filename?: string;
 }
 
 export enum GitProvider {
@@ -28,6 +29,7 @@ export interface ProjectRepository {
     provider: GitProvider;
     url: string;
     private?: boolean;
+    organization?: string;
 }
 
 export interface ProjectVersion {

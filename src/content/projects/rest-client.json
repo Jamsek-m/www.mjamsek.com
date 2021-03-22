@@ -5,5 +5,21 @@
     "title": "projects:projects.rest-client.name",
     "description": "projects:projects.rest-client.description",
     "tags": ["Library", "REST", "KumuluzEE", "MicroProfile"],
-    "fullDescription": "projects:projects.rest-client.full-description"
+    "fullDescription": "projects:projects.rest-client.full-description",
+    "images": [
+        "/images/projects/rest-client/rest-client-1.png",
+        "/images/projects/rest-client/rest-client-2.png",
+        "/images/projects/rest-client/rest-client-3.png",
+        "/images/projects/rest-client/rest-client-4.jpg"
+    ],
+    "license": "MIT",
+    "repository": {
+        "provider": "github",
+        "organization": "kumuluz",
+        "url": "kumuluzee-rest-client"
+    },
+    "distribution": {
+        "type": "link",
+        "url": "https://mvnrepository.com/artifact/com.kumuluz.ee.rest-client/kumuluzee-rest-client"
+    }
 }

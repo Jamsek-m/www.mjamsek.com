@@ -10,6 +10,7 @@ export interface NavigationItem {
 export type NavItems = (t: TFunction<string>) => NavigationItem[];
 
 export enum AnchorableSection {
+    NOOP = "noop",
     CONTACT = "contact",
     KNOWLEDGE = "knowledge",
     REFERENCES = "references",

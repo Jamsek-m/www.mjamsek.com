@@ -2,6 +2,7 @@ import React, { FormEvent, useState } from "react";
 import { AnchoredSection } from "../anchored-section/anchored-section.component";
 import { AnchorableSection, ContactFormData } from "../../types";
 import {
+    container,
     title,
     messageSection,
     nameSection,
@@ -58,7 +59,7 @@ export const ContactForm = (_: ContactFormProps) => {
     };
     
     return (
-        <AnchoredSection id={AnchorableSection.CONTACT}>
+        <AnchoredSection id={AnchorableSection.CONTACT} className={container}>
             <h2 className={title}>{t("common:footer.contact.title")}</h2>
             
             <form name="contact-form"

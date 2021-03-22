@@ -5,7 +5,7 @@
   padding-bottom: 120px;
 }
 .default-container {
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 
 .project-tags {
@@ -23,4 +23,27 @@
   &:last-child {
     margin-right: 0;
   }
+}
+.releases-container {
+  margin: 20px 0;
+}
+
+.gallery-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.license-container {
+  margin-top: 20px;
+}
+.license-key {
+  font-weight: 600;
+}
+.license-value {
+  font-weight: 700;
+  color: $accent-color;
+}
+
+.repository-container {
+  margin-top: 20px;
 }

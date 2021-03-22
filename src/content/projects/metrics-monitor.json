@@ -5,5 +5,19 @@
     "title": "projects:projects.metrics-monitor.name",
     "description": "projects:projects.metrics-monitor.description",
     "tags": ["Library","Diploma thesis"],
-    "fullDescription": "projects:projects.metrics-monitor.full-description"
+    "fullDescription": "projects:projects.metrics-monitor.full-description",
+    "distribution": {
+        "type": "link",
+        "url": "https://github.com/Jamsek-m/diploma-thesis/tree/develop/code"
+    },
+    "repository": {
+        "provider": "github",
+        "url": "diploma-thesis"
+    },
+    "releases": [
+        {
+            "version": "1.0.0",
+            "releaseDate": "2019-09-13T09:00:00.000Z"
+        }
+    ]
 }

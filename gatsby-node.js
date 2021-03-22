@@ -6,10 +6,12 @@ exports.createSchemaCustomization = ({ actions }) => {
         type ProjectDistribution {
             url: String!
             type: String!
+            filename: String
         }
         type ProjectRepository {
             provider: String!
             url: String!
+            organization: String
             private: Boolean
         }
         type ProjectVersion {
@@ -46,6 +48,7 @@ exports.createPages = async({ actions, graphql, reporter }) => {
                     path
                     repository {
                         url
+                        organization
                     }
                 }
             }
@@ -65,7 +68,8 @@ exports.createPages = async({ actions, graphql, reporter }) => {
             context: {
                 projectId: node.id,
                 githubHandle: (node.repository && node.repository.url) || "",
-                githubLogin: process.env.GITHUB_LOGIN
+                githubLogin: process.env.GITHUB_LOGIN,
+                githubOrgLogin: (node.repository && node.repository.organization) || ""
             }
         })
     })

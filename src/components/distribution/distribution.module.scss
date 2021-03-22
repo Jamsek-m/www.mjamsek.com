@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.container {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  h5 {
+    margin-right: 20px;
+  }
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $text-color-white;
+  background-color: $primary-color;
+  border-radius: 5px;
+  height: 30px;
+  padding: 0 25px;
+
+  &:hover {
+    color: $text-color-white !important;
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"intro": {
+		"para": "Za nekatere svoje produkte ponujam beta različico, ki ima najnovejše funkcionalnosti, se pa lahko njena vsebina spremeni brez opozorila in tako pokvari obstoječ program, saj ne zagotavljam stabilne beta verzije.",
+		"title": "Beta projekti"
+	},
+	"java": {
+		"description": "Knjižnice za platformo Java, ki so na voljo v beta programu",
+		"title": "knjižnice za platformo Java"
+	}
+}

@@ -32,6 +32,9 @@
 		"copyright": "all rights reserved"
 	},
 	"meta": {
+		"beta": {
+			"title": "Beta"
+		},
 		"projects": {
 			"title": "Projects"
 		},

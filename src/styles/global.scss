@@ -8,6 +8,7 @@ $secondary: $secondary-color;
 $danger: $accent-color;
 
 @import "~bootstrap/scss/bootstrap";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 * {
   font-family: $font-roboto;
@@ -55,12 +56,11 @@ a {
 }
 
 
-
-
 .page-container {
   display: flex;
   justify-content: center;
 }
+
 .page-content {
   @include device-specific($xs) {
     width: 90%;
@@ -73,5 +73,46 @@ a {
   }
   @include device-specific($lg) {
     width: 60%;
+  }
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: 250px;
+  max-height: 250px !important;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.type-dark {
+  color: #fff !important;
+  background: #222 !important;
+  border: 1px solid transparent !important;
+}
+
+.place-top {
+  &::before {
+    border-top: 8px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -10px;
+  }
+
+  &::after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -8px;
+    border-top-color: #222;
+    border-top-style: solid;
+    border-top-width: 6px;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
   }
 }

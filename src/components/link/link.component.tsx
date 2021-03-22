@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, ReactNode } from "react";
 import { Link as InternalLink } from "gatsby";
-import { useLocalizedUrl } from "../../utils";
+import { useLocalizedUrl, otherProps } from "../../utils";
 
 interface LinkProps {
     to: string;
@@ -18,30 +18,12 @@ const propsKeys: LinkProps = {
     children: {} as ReactNode
 };
 
-type ContainerType =
-    HTMLAttributes<HTMLSpanElement>
-    | HTMLAttributes<HTMLAnchorElement>
-    | HTMLAttributes<InternalLink<any>>;
-
-function getOtherProps(props: LinkProps): ContainerType {
-    let htmlProps = {} as ContainerType;
-    for (let key in props) {
-        // noinspection JSUnfilteredForInLoop
-        if (!(propsKeys as any)[key]) {
-            // noinspection JSUnfilteredForInLoop
-            (htmlProps as any)[key] = props[key];
-        }
-    }
-    return htmlProps;
-}
-
-
 export const Link = (props: LinkProps) => {
     const { to, external, anchor, children } = props;
     
     if (anchor) {
         return (
-            <span {...getOtherProps(props) as HTMLAttributes<HTMLSpanElement>} onClick={() => {
+            <span {...otherProps(props, propsKeys) as HTMLAttributes<HTMLSpanElement>} onClick={() => {
                 const elem: HTMLHeadingElement | null = document.querySelector(to);
                 if (elem) {
                     console.log("ELEM: ", elem);
@@ -59,7 +41,7 @@ export const Link = (props: LinkProps) => {
     
     if (external) {
         return (
-            <a href={to} {...getOtherProps(props) as HTMLAttributes<HTMLAnchorElement>}
+            <a href={to} {...otherProps(props, propsKeys) as HTMLAttributes<HTMLAnchorElement>}
                 target="_blank" rel="noreferrer noopener">
                 {children}
             </a>
@@ -70,7 +52,7 @@ export const Link = (props: LinkProps) => {
     const url = localizeUrl(to);
     
     return (
-        <InternalLink to={url} {...getOtherProps(props) as HTMLAttributes<HTMLAnchorElement>}>
+        <InternalLink to={url} {...otherProps(props, propsKeys) as HTMLAttributes<HTMLAnchorElement>}>
             {children}
         </InternalLink>
     );

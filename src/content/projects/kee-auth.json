@@ -9,6 +9,7 @@
         "Security",
         "KumuluzEE"
     ],
+    "license": "MIT",
     "fullDescription": "projects:projects.kee-auth.full-description",
     "distribution": {
         "type": "link",
@@ -17,5 +18,9 @@
     "repository": {
         "provider": "github",
         "url": "kee-auth"
-    }
+    },
+    "images": [
+        "/images/projects/kee-auth/keycloak.jpg",
+        "/images/projects/kee-auth/kumuluzee.png"
+    ]
 }

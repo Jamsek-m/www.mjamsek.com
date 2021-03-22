@@ -11,6 +11,7 @@ import {
     containerPadding,
     copyright,
     contactForm,
+    contactFormContainer,
     content
 } from "./footer.module.scss";
 import { ContactForm } from "../contact-form/contact-form.component";
@@ -45,8 +46,10 @@ export const Footer = (props: FooterProps) => {
                     ))}
                 </div>
                 {contact && (
-                    <div className={contactForm}>
-                        <ContactForm/>
+                    <div className={contactFormContainer}>
+                        <div className={contactForm}>
+                            <ContactForm/>
+                        </div>
                     </div>
                 )}
                 <div className={copyright}>
