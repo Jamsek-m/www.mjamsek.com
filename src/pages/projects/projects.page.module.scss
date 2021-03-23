@@ -8,6 +8,7 @@
     font-weight: 600;
   }
 }
+
 .projects {
   @include device-specific($xs) {
     display: flex;
@@ -43,6 +44,15 @@
   }
 }
 
+.tags-filters {
+  display: inline-flex;
+  align-items: center;
+  height: 25px;
+  color: $primary-color;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
 .project-tags {
   margin-bottom: 20px;
   display: flex;
@@ -51,6 +61,7 @@
   padding: 5px 0;
   width: 100%;
 }
+
 .project-tag {
   margin-right: 10px;
   margin-bottom: 5px;

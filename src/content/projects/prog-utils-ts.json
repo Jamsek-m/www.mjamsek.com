@@ -1,0 +1,25 @@
+{
+    "id": "prog-utils-ts",
+    "position": 25,
+    "path": "/prog-utils-ts",
+    "title": "projects:projects.prog-utils-ts.name",
+    "description": "projects:projects.prog-utils-ts.description",
+    "fullDescription": "projects:projects.prog-utils-ts.full-description",
+    "tags": [
+        "Library",
+        "Typescript"
+    ],
+    "thumbnail": "/images/projects/prog-utils-ts/typescript.png",
+    "images": [
+        "/images/projects/prog-utils-ts/typescript.png"
+    ],
+    "license": "MIT",
+    "repository": {
+        "provider": "github",
+        "url": "ts-prog-utils"
+    },
+    "distribution": {
+        "type": "link",
+        "url": "https://www.npmjs.com/package/@mjamsek/prog-utils"
+    }
+}

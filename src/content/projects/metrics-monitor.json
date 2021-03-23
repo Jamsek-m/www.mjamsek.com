@@ -4,7 +4,10 @@
     "path": "/metrics-monitor",
     "title": "projects:projects.metrics-monitor.name",
     "description": "projects:projects.metrics-monitor.description",
-    "tags": ["Library","Diploma thesis"],
+    "tags": [
+        "Library",
+        "Theoretical"
+    ],
     "fullDescription": "projects:projects.metrics-monitor.full-description",
     "distribution": {
         "type": "link",

@@ -9,6 +9,7 @@ $microprofile-bg: #FAB331;
 $library-bg: #066906;
 $angular-bg: #C3002F;
 $config-bg: #19B0C1;
+$typescript-bg: #3178C6;
 
 .tag-security {
   background-color: $security-ng !important;
@@ -34,7 +35,13 @@ $config-bg: #19B0C1;
   background-color: $angular-bg !important;
   color: $light-tag-text !important;
 }
+
 .tag-config {
   background-color: $config-bg !important;
+  color: $light-tag-text !important;
+}
+
+.tag-typescript {
+  background-color: $typescript-bg !important;
   color: $light-tag-text !important;
 }

@@ -8,7 +8,14 @@ import { Tag } from "../../components/tag/tag.component";
 import { ProjectsPageProps, ProjectsStateStatus, StateActionType } from "../../types/projects.page.types";
 import { projectsReducer } from "../../controllers/projects.controller";
 
-import { header, projectItem, projects as projectsStyle, projectTag, projectTags } from "./projects.page.module.scss";
+import {
+    header,
+    projectItem,
+    projects as projectsStyle,
+    projectTag,
+    projectTags,
+    tagsFilters
+} from "./projects.page.module.scss";
 
 
 const ProjectsPage = (props: ProjectsPageProps) => {
@@ -45,13 +52,14 @@ const ProjectsPage = (props: ProjectsPageProps) => {
                 </div>
                 
                 <div className={projectTags}>
+                    <span className={tagsFilters}>{t("projects:sections.filters")}:</span>
                     {projectsState.tags.map((tag, index) => (
                         <Tag key={index}
                             value={tag.toLowerCase()}
                             label={tag}
                             disabled={!projectsState.selectedTags.has(tag)}
                             onClick={toggleTags(tag)}
-                            small={false}
+                            small={true}
                             className={projectTag}
                         />
                     ))}

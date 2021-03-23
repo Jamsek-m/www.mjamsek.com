@@ -18,6 +18,11 @@
 			"full-description": "<p>Library for reading external configuration and applying it to Angular environment configuration. Instead of using harcoded environment object, library reads external JSON configuration (which can be server by the application itself) and overrides values in environment with those in external configuration. By using this library and tools like docker, we can deploy same docker image with different environment values to adjust app for different execution environments.</p><h3>Angular</h3><p><a href=\"https://angular.io/\" target=\"_blank\" rel=\"noreferrer noopener\">Angular</a> Angular is a platform for building mobile and desktop web applications.</p>",
 			"name": "Angular configuration library"
 		},
+		"prog-utils-ts": {
+			"description": "Utility library providing type definitions.",
+			"full-description": "<p>Utility library providing type definitions.</p>",
+			"name": "Utils library for Typescript"
+		},
 		"rest-client": {
 			"description": "Implementation of MicroProfile RestClient 1.4.1 for KumuluzEE framework.",
 			"full-description": "<p>As part of project \"Development of microservices for blockchain support and application in CRM system domains (MBCRM)\" I implemented MicroProfile specification for RestClient for <a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">Kumuluzee</a> platform.</p><h3>MicroProfile</h3><p><a href=\"https://microprofile.io/\" target=\"_blank\" rel=\"noreferrer noopener\">MicroProfile</a> is an open-source JavaEE specification oriented towards microservice architecture</p>",
@@ -29,6 +34,7 @@
 			"file-title": "Download",
 			"link-title": "Available in"
 		},
+		"filters": "Filters",
 		"license": {
 			"title": "LICENSE"
 		},
