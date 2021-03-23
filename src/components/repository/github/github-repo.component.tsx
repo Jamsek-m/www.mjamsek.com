@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getDescription, getName, getProfileName, getProfileUrl, getUrl } from "../../../utils";
 
 interface GitHubRepoProps {
-    repo?: GitHubRepository;
+    repo: GitHubRepository;
 }
 
 export const GitHubRepo = (props: GitHubRepoProps) => {
@@ -28,15 +28,15 @@ export const GitHubRepo = (props: GitHubRepoProps) => {
                         title="GitHub"/>
                 </div>
                 <div className={nameContainer}>
-                    <Link to={getProfileUrl(repo, undefined)} external={true}>
-                        {getProfileName(repo, undefined)}
+                    <Link to={getProfileUrl(repo)} external={true}>
+                        {getProfileName(repo)}
                     </Link>
                     <span className={nameDivider}>/</span>
-                    <Link to={getUrl(repo, undefined)} external={true}>{getName(repo, undefined)}</Link>
+                    <Link to={getUrl(repo)} external={true}>{getName(repo)}</Link>
                 </div>
             </div>
             <div className={desc}>
-                {getDescription(repo, undefined)}
+                {getDescription(repo)}
             </div>
         </div>
     );
