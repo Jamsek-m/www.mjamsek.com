@@ -3,17 +3,33 @@
 
 
 .container-padding {
-  padding-bottom: 60px;
+  @include device-specific($xs) {
+    padding-bottom: 20px;
+  }
+  @include device-specific($sm) {
+    padding-bottom: 20px;
+  }
+  @include device-specific($md) {
+    padding-bottom: 60px;
+  }
 }
 
 .container {
   background-color: $primary-color;
   display: flex;
-  padding-top: 40px;
   justify-content: center;
 
   * {
     color: $text-color-white;
+  }
+  @include device-specific($xs) {
+    padding-top: 20px;
+  }
+  @include device-specific($sm) {
+    padding-top: 20px;
+  }
+  @include device-specific($md) {
+    padding-top: 40px;
   }
 }
 
@@ -45,7 +61,15 @@
   justify-content: center;
 }
 .contact-form {
-  width: 50%;
+  @include device-specific($xs) {
+    width: 80%;
+  }
+  @include device-specific($sm) {
+    width: 80%;
+  }
+  @include device-specific($md) {
+    width: 50%;
+  }
 }
 
 .copyright {

@@ -67,5 +67,13 @@
 }
 
 .references-section {
-  margin-bottom: 120px;
+  @include device-specific($xs) {
+    margin-bottom: 60px;
+  }
+  @include device-specific($sm) {
+    margin-bottom: 60px;
+  }
+  @include device-specific($md) {
+    margin-bottom: 120px;
+  }
 }

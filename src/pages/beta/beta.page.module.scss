@@ -1,28 +1,51 @@
 @import "../../styles/variables";
 @import "../../styles/responsive";
 
-.header {
-  padding: 40px 0;
-
-  h2 {
-    font-weight: 600;
-  }
-}
-
 .container {
   padding-top: 60px;
-  padding-bottom: 80px;
+
+  @include device-specific($xs) {
+    padding-bottom: 20px;
+  }
+  @include device-specific($sm) {
+    padding-bottom: 20px;
+  }
+  @include device-specific($md) {
+    padding-bottom: 80px;
+  }
 }
 .content {
-  width: 60%;
+  @include device-specific($xs) {
+    width: 100%;
+  }
+  @include device-specific($sm) {
+    width: 100%;
+  }
+  @include device-specific($md) {
+    width: 80%;
+  }
+  @include device-specific($lg) {
+    width: 60%;
+  }
 }
 
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 
-  margin-bottom: 60px;
+
+  @include device-specific($xs) {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  @include device-specific($sm) {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  @include device-specific($md) {
+    margin-bottom: 60px;
+    justify-content: flex-start;
+  }
 }
 
 .social-link-item {
@@ -32,6 +55,12 @@
     width: 100%;
   }
   @include device-specific($sm) {
+    width: 100%;
+  }
+  @include device-specific($md) {
+    width: 60%;
+  }
+  @include device-specific($lg) {
     width: 50%;
   }
 }

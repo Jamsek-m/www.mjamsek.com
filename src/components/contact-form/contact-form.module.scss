@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/responsive";
 
 .container {
   width: 100%;
@@ -9,19 +10,46 @@
 
 .form {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+
+  @include device-specific($xs) {
+    justify-content: center;
+  }
+  @include device-specific($sm) {
+    justify-content: center;
+  }
+  @include device-specific($md) {
+    justify-content: space-between;
+  }
 }
 
 .name-section {
-  width: 50%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include device-specific($xs) {
+    width: 100%;
+    margin-top: 20px;
+  }
+  @include device-specific($sm) {
+    width: 100%;
+    margin-top: 20px;
+  }
+  @include device-specific($md) {
+    width: calc(50% - 20px);
+  }
 }
 .message-section {
-  width: 50%;
+  @include device-specific($xs) {
+    width: 100%;
+  }
+  @include device-specific($sm) {
+    width: 100%;
+  }
+  @include device-specific($md) {
+    width: calc(50% - 20px);
+  }
 }
 
 .form-item-label {
@@ -31,6 +59,13 @@
 
 .form-item-group {
   width: 100%;
+
+  input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
 }
 
 .form-item {
@@ -61,23 +96,41 @@
 .actions {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
   margin-top: 20px;
+
+  @include device-specific($xs) {
+    justify-content: center;
+  }
+  @include device-specific($sm) {
+    justify-content: center;
+  }
+  @include device-specific($md) {
+    justify-content: flex-end;
+  }
 }
 .submit-button {
   background-color: $primary-color;
   border: 1px solid white;
   border-radius: 5px;
   height: 50px;
-  min-width: 125px;
+
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-
   &[disabled] {
     opacity: 0.5;
+  }
+
+  @include device-specific($xs) {
+    min-width: 60%;
+  }
+  @include device-specific($sm) {
+    min-width: 60%;
+  }
+  @include device-specific($md) {
+    min-width: 125px;
   }
 }
 

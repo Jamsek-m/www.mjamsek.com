@@ -1,7 +1,19 @@
 @import "../../styles/variables";
+@import "../../styles/responsive";
 
 .container {
-  width: 40%;
+  @include device-specific($xs) {
+    width: 100%;
+  }
+  @include device-specific($sm) {
+    width: 100%;
+  }
+  @include device-specific($md) {
+    width: 60%;
+  }
+  @include device-specific($lg) {
+    width: 40%;
+  }
 }
 
 .latest {

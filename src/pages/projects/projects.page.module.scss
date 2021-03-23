@@ -9,13 +9,33 @@
   }
 }
 .projects {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  @include device-specific($xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  @include device-specific($sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  @include device-specific($md) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
 }
 
 .project-item {
   @include device-specific($xs) {
+    width: 100%;
+  }
+  @include device-specific($sm) {
     width: 100%;
   }
   @include device-specific($md) {

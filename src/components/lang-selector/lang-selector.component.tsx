@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useI18next } from "gatsby-plugin-react-i18next";
 import { LANGUAGES } from "../../config/lang.config";
 import { toggler, langMenu, langMenuItem } from "./lang-selector.module.scss";
-import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from "reactstrap";
+import { Dropdown } from "react-bootstrap";
 
 
 interface LangSelectorProps {
@@ -16,6 +16,7 @@ export const LangSelector = (_: LangSelectorProps) => {
     
     const toggleLanguage = (lang: string) => {
         return () => {
+            toggleDropdown(false);
             i18next.changeLanguage(lang);
         };
     };
@@ -27,18 +28,20 @@ export const LangSelector = (_: LangSelectorProps) => {
     };
     
     return (
-        <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-            <DropdownToggle onClick={toggle()} className={toggler}>
+        <Dropdown show={dropdownOpen}>
+            <Dropdown.Toggle variant="success" id="navbar-toggler" className={toggler} onClick={toggle()}>
                 <img src={(LANGUAGES as any)[i18next.language].icon} alt={`lang-${i18next.language}`}/>
-            </DropdownToggle>
-            <DropdownMenu className={langMenu}>
+            </Dropdown.Toggle>
+            <Dropdown.Menu className={langMenu}>
                 {Object.keys(LANGUAGES).map((lang: string, index) => (
-                    <DropdownItem key={index} className={langMenuItem} onClick={toggleLanguage(lang)}>
+                    <Dropdown.Item key={index}
+                        className={langMenuItem}
+                        onClick={toggleLanguage(lang)}>
                         <img src={(LANGUAGES as any)[lang].icon} alt={`lang-${lang}`}/>
                         <span>{(LANGUAGES as any)[lang].label}</span>
-                    </DropdownItem>
+                    </Dropdown.Item>
                 ))}
-            </DropdownMenu>
+            </Dropdown.Menu>
         </Dropdown>
     );
 };

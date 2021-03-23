@@ -10,6 +10,10 @@
 
 .toggler {
   @include enforce-nohover;
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
 
   &:hover, &:focus, &:focus-visible, &:active {
     @include enforce-nohover;
@@ -22,6 +26,7 @@ $dropdown-width: 80px;
   width: $dropdown-width;
   min-width: $dropdown-width;
   max-width: $dropdown-width;
+  position: absolute !important;
 }
 
 .lang-menu-item {

@@ -3,7 +3,16 @@
 
 .page-container {
   padding-top: 60px;
-  padding-bottom: 120px;
+
+  @include device-specific($xs) {
+    padding-bottom: 0;
+  }
+  @include device-specific($sm) {
+    padding-bottom: 0;
+  }
+  @include device-specific($md) {
+    padding-bottom: 120px;
+  }
 }
 
 .social-links {

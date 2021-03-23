@@ -6,5 +6,9 @@
 	"java": {
 		"description": "Knjižnice za platformo Java, ki so na voljo v beta programu",
 		"title": "knjižnice za platformo Java"
+	},
+	"js": {
+		"description": "Knjižnice Javascript, ki so na voljo v beta programu",
+		"title": "knjižnice Javascript"
 	}
 }

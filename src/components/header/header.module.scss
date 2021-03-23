@@ -1,13 +1,40 @@
 @import "../../styles/variables";
 @import "../../styles/responsive";
+@import "../../styles/mixins";
 
 .container {
   height: $header-height;
   background-color: $background-color;
 }
 
+.toggler-container {
+  @include device-specific($xs) {
+    width: 100%;
+    height: $header-height;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  @include device-specific($sm) {
+    width: 100%;
+    height: $header-height;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  @include device-specific($md) {
+    height: unset;
+    width: unset;
+  }
+}
 .toggler {
   margin-right: 25px;
+  @include no-select;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 .navbar-container {
@@ -15,10 +42,7 @@
   justify-content: flex-end !important;
   padding: 0;
   min-height: $header-height;
-
-  @include device-specific($xs) {
-    background-color: $background-color;
-  }
+  background-color: $background-color;
 }
 
 .collapsible {
@@ -34,8 +58,17 @@
   list-style-type: none;
   height: 100%;
   width: 100%;
-  padding-right: 60px;
   background-color: $background-color;
+
+  @include device-specific($xs) {
+
+  }
+  @include device-specific($sm) {
+
+  }
+  @include device-specific($md) {
+    padding-right: 60px;
+  }
 }
 
 .navbar-item-active {
@@ -45,21 +78,36 @@
 }
 
 .navbar-item {
-  height: $header-height;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
-
-  &:first-child {
-    margin-left: 0;
-  }
 
   a {
     font-size: 1rem;
     color: $text-color-white;
     font-weight: 500;
     text-decoration: none;
+  }
+  @include device-specific($xs) {
+    width: 100%;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  @include device-specific($sm) {
+    width: 100%;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  @include device-specific($md) {
+    width: unset;
+    margin-left: 30px;
+    &:first-child {
+      margin-left: 0;
+      padding-top: 10px;
+    }
   }
 }
 

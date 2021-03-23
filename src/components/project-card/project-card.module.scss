@@ -6,14 +6,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
 
-  &:nth-child(odd) {
-    padding-right: 30px;
+  @include device-specific($xs) {
+    margin-bottom: 40px;
   }
+  @include device-specific($sm) {
+    margin-bottom: 40px;
+  }
+  @include device-specific($md) {
+    margin-bottom: 60px;
+    &:nth-child(odd) {
+      padding-right: 30px;
+    }
 
-  &:nth-child(even) {
-    padding-left: 30px;
+    &:nth-child(even) {
+      padding-left: 30px;
+    }
   }
 }
 
@@ -22,11 +30,20 @@
   width: 100%;
   box-shadow: 0 0 8px 0 #888888;
   padding: 25px;
-  min-height: 500px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include device-specific($xs) {
+    min-height: 250px;
+  }
+  @include device-specific($sm) {
+    min-height: 250px;
+  }
+  @include device-specific($md) {
+    min-height: 500px;
+  }
 }
 
 .project-tags {

@@ -26,9 +26,6 @@ const BetaPage = (_: BetaPageProps) => {
         <Layout>
             <Seo title={t("common:meta.beta.title")}/>
             <PageContainer containerStyle={container}>
-                {/*<div className={header}>*/}
-                {/*    <h2>{t("common:meta.beta.title")}</h2>*/}
-                {/*</div>*/}
                 <div className={content}>
                     <p>{t("beta:intro.para")}</p>
                     
@@ -41,6 +38,13 @@ const BetaPage = (_: BetaPageProps) => {
                             <div className={socialLinkItem}>
                                 <SocialCard socialLink={betaMaven!}/>
                             </div>
+                        </div>
+                    </div>
+    
+                    <div className={betaProject}>
+                        <h4>{t("beta:js.title")}</h4>
+                        <p>{t("beta:js.description")}:</p>
+                        <div className={socialLinks}>
                             <div className={socialLinkItem}>
                                 <SocialCard socialLink={betaNpm!}/>
                             </div>

@@ -1,8 +1,18 @@
 @import "../../styles/variables";
+@import "../../styles/responsive";
 
 .page-container {
   padding-top: 60px;
-  padding-bottom: 120px;
+
+  @include device-specific($xs) {
+    padding-bottom: 60px;
+  }
+  @include device-specific($sm) {
+    padding-bottom: 60px;
+  }
+  @include device-specific($md) {
+    padding-bottom: 120px;
+  }
 }
 .default-container {
   padding-bottom: 20px;
@@ -29,8 +39,18 @@
 }
 
 .gallery-container {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  @include device-specific($xs) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @include device-specific($sm) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @include device-specific($md) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .license-container {

@@ -6,5 +6,9 @@
 	"java": {
 		"description": "Libraries for Java platform, available in beta program",
 		"title": "Java libraries"
+	},
+	"js": {
+		"description": "Libraries for Javascript, available in beta program",
+		"title": "Javascript libraries"
 	}
 }
