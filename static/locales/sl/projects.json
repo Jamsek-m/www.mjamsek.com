@@ -13,6 +13,11 @@
 			"full-description": "Študijski projekt za diplomsko delo - platforma za spremljanje metrik aplikacij na eni strani.",
 			"name": "MetricsMonitor"
 		},
+		"ngx-config": {
+			"description": "Knjižnica za uveljavljanje konfiguracije v izvajalnem času Angular aplikacij.",
+			"full-description": "<p>Knjižnica za branje zunanje konfiguracije in uveljavljanje le-te v Angular okoljski konfiguraciji. Namesto, da uporabljamo okoljski objekt iz kode, knjižnica prebere zunanjo JSON konfiguracijo (ki jo lahko strežemo skupaj z Angular aplikacijo) in vrednosti v okolju prepiše s temi iz zunanje konfiguracije. Z uporabo te knjižnice skupaj z orodji kot so Docker, lahko isto sliko Docker z različnimi okoljski vrednostmi namestimo v različna izvajalna okolja.</p><h3>Angular</h3><p><a href=\"https://angular.io/\" target=\"_blank\" rel=\"noreferrer noopener\">Angular</a> Angular je platforma za gradnjo mobilnih in namiznih spletnih aplikacij.</p>",
+			"name": "Angular knjižnica za konfiguracijo"
+		},
 		"rest-client": {
 			"description": "Implementacija MicroProfile RestClienta 1.4.1 za ogrodje KumuluzEE.",
 			"full-description": "<p>Kot del projekta \"Razvoj mikrostoritev za podporo tehnologijam veriženja blokov (blockchain) in aplikacija na domeno CRM sistemov (akronim MBCRM)\" sem implementiral MicroProfile specifikacijo RestClient-a za platformo <a href=\"https://ee.kumuluz.com\" target=\"_blank\" rel=\"noreferrer noopener\">KumuluzEE</a>.</p><h3>MicroProfile</h3><p><a href=\"https://microprofile.io/\" target=\"_blank\">MicroProfile</a> je odprtokodna JavaEE specifikacija usmerjena v mikrostoritveno arhitekturo</p>",

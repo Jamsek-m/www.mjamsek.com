@@ -64,7 +64,8 @@ const ProjectDetailsTemplate = (props: ProjectDetailsPageProps) => {
                     <h2>{t(project.title)}</h2>
                     
                     {/* RELEASES - if github repo, handle different */}
-                    {(!project.releases || project.releases.length === 0) && github !== null && (
+                    {(!project.releases || project.releases.length === 0) &&
+                    github !== null && github.latestRelease !== null && (
                         <div className={releasesContainer}>
                             {github && (
                                 <GithubVersions repository={github}/>

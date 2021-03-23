@@ -19,6 +19,7 @@
         "provider": "github",
         "url": "kee-auth"
     },
+    "thumbnail": "/images/projects/kee-auth/kumuluzee.png",
     "images": [
         "/images/projects/kee-auth/keycloak.jpg",
         "/images/projects/kee-auth/kumuluzee.png"

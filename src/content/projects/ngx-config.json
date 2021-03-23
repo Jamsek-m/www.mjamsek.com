@@ -1,0 +1,26 @@
+{
+    "id": "ngx-config",
+    "position": 20,
+    "path": "/ngx-config",
+    "title": "projects:projects.ngx-config.name",
+    "description": "projects:projects.ngx-config.description",
+    "fullDescription": "projects:projects.ngx-config.full-description",
+    "tags": [
+        "Library",
+        "Angular",
+        "Config"
+    ],
+    "license": "MIT",
+    "distribution": {
+        "type": "link",
+        "url": "https://www.npmjs.com/package/@mjamsek/ngx-config"
+    },
+    "thumbnail": "/images/projects/ngx-config/angular.png",
+    "images": [
+        "/images/projects/ngx-config/angular.png"
+    ],
+    "repository": {
+        "provider": "github",
+        "url": "ngx-config"
+    }
+}

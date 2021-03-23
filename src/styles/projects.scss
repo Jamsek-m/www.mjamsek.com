@@ -7,6 +7,8 @@ $security-ng: purple;
 $kumuluzee-bg: #155bfb;
 $microprofile-bg: #FAB331;
 $library-bg: #066906;
+$angular-bg: #C3002F;
+$config-bg: #19B0C1;
 
 .tag-security {
   background-color: $security-ng !important;
@@ -25,5 +27,14 @@ $library-bg: #066906;
 
 .tag-library {
   background-color: $library-bg !important;
+  color: $light-tag-text !important;
+}
+
+.tag-angular {
+  background-color: $angular-bg !important;
+  color: $light-tag-text !important;
+}
+.tag-config {
+  background-color: $config-bg !important;
   color: $light-tag-text !important;
 }

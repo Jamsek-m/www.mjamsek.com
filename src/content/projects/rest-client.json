@@ -6,6 +6,7 @@
     "description": "projects:projects.rest-client.description",
     "tags": ["Library", "REST", "KumuluzEE", "MicroProfile"],
     "fullDescription": "projects:projects.rest-client.full-description",
+    "thumbnail": "/images/projects/rest-client/rest-client-1.png",
     "images": [
         "/images/projects/rest-client/rest-client-1.png",
         "/images/projects/rest-client/rest-client-2.png",
