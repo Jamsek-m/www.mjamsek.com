@@ -4,7 +4,7 @@ export interface ProjectSimple {
     path: string;
     title: string;
     description: string;
-    thumbnail: string;
+    thumbnail?: string;
     tags: string[];
 }
 

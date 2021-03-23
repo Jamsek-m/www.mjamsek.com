@@ -1,0 +1,150 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://www.mjamsek.com/projects.schema.json",
+    "title": "mJamsek Projects",
+    "description": "mJamsek project schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "position": {
+            "type": "number",
+            "description": "Order to display projects in. Lower positions are displayed sooner."
+        },
+        "path": {
+            "type": "string",
+            "description": "Path that project will be available at. Must be unique, with no lang prefixes."
+        },
+        "title": {
+            "type": "string",
+            "description": "Key for translated value of project's title."
+        },
+        "description": {
+            "type": "string",
+            "description": "Key for translated value of project's short description."
+        },
+        "fullDescription": {
+            "type": "string",
+            "description": "Key for translated value of project's full description."
+        },
+        "license": {
+            "type": "string"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "images": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "thumbnail": {
+            "type": "string"
+        },
+        "distribution": {
+            "type": "object",
+            "$ref": "#/definitions/ProjectDistribution"
+        },
+        "repository": {
+            "type": "object",
+            "$ref": "#/definitions/ProjectRepository"
+        },
+        "releases": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "$ref": "#/definitions/ProjectDistribution"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "position",
+        "path",
+        "title",
+        "description",
+        "tags",
+        "fullDescription"
+    ],
+    "definitions": {
+        "ProjectDistribution": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "$ref": "#/definitions/DistributionType"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "filename": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "type",
+                "url"
+            ]
+        },
+        "ProjectRepository": {
+            "type": "object",
+            "properties": {
+                "provider": {
+                    "$ref": "#/definitions/GitProvider"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "private": {
+                    "type": "boolean"
+                },
+                "organization": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "provider",
+                "url"
+            ]
+        },
+        "ProjectVersion": {
+            "type": "object",
+            "properties": {
+                "version": {
+                    "type": "string"
+                },
+                "releaseDate": {
+                    "type": "string"
+                },
+                "snapshot": {
+                    "type": "boolean"
+                },
+                "latest": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "version"
+            ]
+        },
+        "GitProvider": {
+            "type": "string",
+            "enum": [
+                "github",
+                "bitbucket",
+                "gitlab"
+            ]
+        },
+        "DistributionType": {
+            "type": "string",
+            "enum": [
+                "link",
+                "file"
+            ]
+        }
+    }
+}
