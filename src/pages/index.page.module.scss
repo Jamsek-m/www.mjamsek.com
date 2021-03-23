@@ -56,10 +56,10 @@
 
 .learn-more-section {
   @include device-specific($xs) {
-    padding-top: $header-height - 20px;
+    padding-top: $header-height + 20px;
   }
   @include device-specific($sm) {
-    padding-top: $header-height - 20px;
+    padding-top: $header-height + 20px;
   }
   @include device-specific($md) {
     padding-top: $header-height + 40px;
@@ -69,11 +69,14 @@
 .references-section {
   @include device-specific($xs) {
     margin-bottom: 60px;
+    padding-top: $header-height + 20px;
   }
   @include device-specific($sm) {
     margin-bottom: 60px;
+    padding-top: $header-height + 20px;
   }
   @include device-specific($md) {
     margin-bottom: 120px;
+    padding-top: $header-height + 40px;
   }
 }
