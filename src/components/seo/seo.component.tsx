@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 export interface SeoProps {
     description?: string;
@@ -8,8 +9,9 @@ export interface SeoProps {
     title: string;
 }
 
-const SeoComponent = (props: SeoProps) => {
+export const Seo = (props: SeoProps) => {
     const { lang, meta, title, description } = props;
+    const { i18n } = useTranslation();
     let fullMeta = [
         {
             name: "description",
@@ -22,7 +24,7 @@ const SeoComponent = (props: SeoProps) => {
     
     return (
         <Helmet
-            htmlAttributes={{ lang }}
+            htmlAttributes={{ lang: lang || i18n.language }}
             title={title}
             titleTemplate={"%s | mJamsek"}
             meta={fullMeta}
@@ -30,10 +32,9 @@ const SeoComponent = (props: SeoProps) => {
     );
 };
 
-SeoComponent.defaultProps = {
+Seo.defaultProps = {
     lang: "en",
     meta: [],
     description: ""
 };
 
-export const Seo = SeoComponent;
