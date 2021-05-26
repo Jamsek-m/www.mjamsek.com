@@ -40,6 +40,25 @@
     width: calc(50% - 20px);
   }
 }
+.name-space {
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile-margin {
+  @include device-specific($xs) {
+    margin-bottom: 40px;
+  }
+  @include device-specific($sm) {
+    margin-bottom: 40px;
+  }
+  @include device-specific($md) {
+    margin-bottom: 0;
+  }
+}
+
 .message-section {
   @include device-specific($xs) {
     width: 100%;
@@ -50,6 +69,12 @@
   @include device-specific($md) {
     width: calc(50% - 20px);
   }
+}
+.message-layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .form-item-label {

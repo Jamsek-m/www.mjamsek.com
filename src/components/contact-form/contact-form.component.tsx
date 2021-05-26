@@ -14,7 +14,10 @@ import {
     alerts,
     alertError,
     alertSent,
-    formItemGroup
+    formItemGroup,
+    nameSpace,
+    mobileMargin,
+    messageLayout,
 } from "./contact-form.module.scss";
 import { useTranslation } from "react-i18next";
 import { EmailService } from "../../services";
@@ -72,7 +75,7 @@ export const ContactForm = (_: ContactFormProps) => {
                 <input type="hidden" name="itsatrap"/>
                 
                 <div className={nameSection}>
-                    <div className={`form-group ${formItemGroup}`}>
+                    <div className={`form-group ${formItemGroup} ${nameSpace}`}>
                         <label className={formItemLabel}>{t("common:footer.contact.fields.name")}</label>
                         <input type="text"
                             className={determineInputStyle(contact.name.hasErrored())}
@@ -85,7 +88,7 @@ export const ContactForm = (_: ContactFormProps) => {
                         <Error visible={contact.name.hasErrored()} error={contact.name.error || ""}/>
                     </div>
                     
-                    <div className={`form-group ${formItemGroup}`}>
+                    <div className={`form-group ${formItemGroup} ${mobileMargin}`}>
                         <label className={formItemLabel}>{t("common:footer.contact.fields.email")}</label>
                         <input type="text"
                             className={determineInputStyle(contact.email.hasErrored())}
@@ -99,7 +102,7 @@ export const ContactForm = (_: ContactFormProps) => {
                     </div>
                 </div>
                 <div className={messageSection}>
-                    <div className={`form-group ${formItemGroup}`}>
+                    <div className={`form-group ${formItemGroup} ${messageLayout}`}>
                         <label className={formItemLabel}>{t("common:footer.contact.fields.message")}</label>
                         <textarea name="message"
                             rows={5}
