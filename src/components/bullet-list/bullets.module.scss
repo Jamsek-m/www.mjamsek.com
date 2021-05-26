@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+@import "../../styles/responsive";
+
+.list-item {
+  color: $background-color;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.item-bullet {
+  margin-right: 10px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: $background-color;
+}
+
+.item-text {
+  display: inline-block;
+}
+.item-text-emph {
+  color: $primary-color;
+}

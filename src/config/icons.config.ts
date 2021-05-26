@@ -18,7 +18,8 @@ export function initializeIcons() {
         faBitbucket,
         faGithub,
         faGitlab,
-        faLinkedinIn, faNpm,
+        faLinkedinIn,
+        faNpm,
         faStackOverflow
     ];
     library.add(...icons);

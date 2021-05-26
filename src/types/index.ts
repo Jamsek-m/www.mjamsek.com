@@ -30,3 +30,12 @@ export type {
     GitHubOwner,
     GitHubRelease,
 } from "./repo.types";
+
+export type {
+    KnowledgeArea,
+    KnowledgeItem,
+    KnowledgeAreas,
+    Reference,
+    ReferenceItem,
+    References,
+} from "./about.types";

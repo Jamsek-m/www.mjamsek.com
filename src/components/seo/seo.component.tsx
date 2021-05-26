@@ -12,12 +12,14 @@ export interface SeoProps {
 export const Seo = (props: SeoProps) => {
     const { lang, meta, title, description } = props;
     const { i18n } = useTranslation();
-    let fullMeta = [
-        {
+    
+    let fullMeta: any[] = [];
+    if (description) {
+        fullMeta = [...fullMeta, {
             name: "description",
-            content: description
-        }
-    ];
+            content: description,
+        }]
+    }
     if (meta) {
         fullMeta = fullMeta.concat(meta);
     }

@@ -7,6 +7,7 @@ export { PageContainer } from "./page-container/page-container.component";
 export { LangSelector } from "./lang-selector/lang-selector.component";
 export { Link } from "./link/link.component";
 export { AnchoredSection } from "./anchored-section/anchored-section.component";
+export { BulletList, Bullet } from "./bullet-list";
 /* HOME */
 export { AboutMe } from "./pages/home/about-me/about-me.component";
 export { LearnMore } from "./pages/home/learn-more/learn-more.component";
