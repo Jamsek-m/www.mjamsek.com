@@ -35,11 +35,14 @@
 		"beta": {
 			"title": "Beta"
 		},
+		"home": {
+			"title": "Domov"
+		},
 		"projects": {
 			"title": "Projekti"
 		},
 		"social": {
-			"title": "Družbeno"
+			"title": "Profili"
 		},
 		"title": "Naslov"
 	},
@@ -47,6 +50,6 @@
 		"contact": "Kontakt",
 		"home": "Domov",
 		"projects": "Projekti",
-		"social": "Družbeno"
+		"social": "Profili"
 	}
 }

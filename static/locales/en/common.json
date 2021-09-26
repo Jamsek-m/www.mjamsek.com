@@ -35,6 +35,9 @@
 		"beta": {
 			"title": "Beta"
 		},
+		"home": {
+			"title": "Home"
+		},
 		"projects": {
 			"title": "Projects"
 		},

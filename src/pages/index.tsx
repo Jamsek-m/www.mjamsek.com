@@ -19,12 +19,14 @@ import {
     learnMoreSection,
 } from "./index.page.module.scss";
 import { AnchorableSection } from "../types";
+import { useTranslation } from "react-i18next";
 
 const IndexPage = () => {
+    const { t } = useTranslation();
     
     return (
         <Layout>
-            <Seo title={"Home"}/>
+            <Seo title={t("common:meta.home.title")}/>
             
             <div className={headerContainer}>
                 <section className={headerSection}>
