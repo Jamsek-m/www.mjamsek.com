@@ -1,13 +1,13 @@
 {
 	"header": {
 		"about-me": {
-			"para": "Sem Miha Jamšek in študiram na Fakulteti za računalništvo in informatiko na Univerzi v Ljubljani. Tukaj najdete moje projekte in projekte pri katerih sem sodeloval. Nekateri so na voljo za prenos in v primeru, da si to želite vas vabim, da si jih prenesete. Na strani je tudi povezava do mojih ostalih spletnih profilov."
+			"para": "Sem Miha Jamšek, magistrski študent na Fakulteti za računalništvo in informatiko na Univerzi v Ljubljani. Ukvarjam se predvsem z razvojem spletnih rešitev in integracijo takšnih rešitev v neko večjo celoto. Na tej strani so izpostavljeni nekateri projekti na katerih sem delal v preteklosti. Zbirka obsega lastne projekte za krajšanje časa, projekte razvite tekom študija, projekte nastale iz potrebe, pa še kaj."
 		},
 		"title": "O meni"
 	},
 	"learn-more": {
 		"knowledge": {
-			"content": "S tehnološkega vidika se ukvarjam predvsem s spletnimi tehnologijami, tako zalednimi kot čelnimi. Za zaledni sistem uporabljam predvsem platformi Java (KumuluzEE/JavaEE and Spring MVC) in Node.js (Express), za čelni sistem pa Angular 10. Občasno se dotaknem tudi Scale, Kotlina, Pythona in C# na zalednem delu ter Vue.js in React (z GatsbyJS) na čelnem delu.",
+			"content": "Ukvarjam se predvsem s spletnimi tehnologijami, tako strežniškimi kot odjemalskimi. Za razvoj strežniškega dela uporabljam predvsem platformo Java (KumuluzEE/JakartaEE/MicroProfile), občasno pa tudi platformo Node.js (Express.js). V manjšem obsegu sem uporabil tudi Python (Flask) in Go. Pri razvoju odjemalskega dela primarno uporabljam Angular, občasno pa tudi React (react-dom, tudi v kombinaciji z GatsbyJS in react-native).",
 			"technologies": {
 				"backend": {
 					"title": "Zaledne tehnologije"

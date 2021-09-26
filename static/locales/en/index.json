@@ -1,13 +1,13 @@
 {
 	"header": {
 		"about-me": {
-			"para": "I am Miha Jamšek and I study at Faculty of computer and information science at University in Ljubljana. Here you can find my projects and projects I contributed to. Some of them are available for download and in case you wish, to do so, I invite you to download them. On this page you can also find links to my other web profiles."
+			"para": "I am Miha Jamšek, master's student at Faculty of computer and information science at University of Ljubljana. Mostly, I work on developing web solutions and integration of such solutions into bigger. On this site there are presented some of the projects I worked on in the past. The collection includes own projects for passing time, projects developed during studies, projects developed out of need and some more."
 		},
 		"title": "About me"
 	},
 	"learn-more": {
 		"knowledge": {
-			"content": "From a technological point of view, I mostly deal with web technologies, backend and frontend. For backend I mostly use platforms Java (KumuluzEE/JavaEE and Spring MVC) and Node.js (Express), while for frontend I use Angular 10. From time to time I also use some Scala, Kotlin, Python, C# on backend and Vue.js and React (with GatsbyJS) on frontend.",
+			"content": "I mostly develop using web technologies, backend as well as frontend. For developing backend, I mostly use platform Java (KumuluzEE/JakartaEE/MicroProfile), occasionally also Node.js (Express.js). In smaller scale I also used Python (Flask) and Go. When developing frontend, I primarily use Angular, occasionally also React (react-dom, also in combination with GatsbyJS and react-native).",
 			"technologies": {
 				"backend": {
 					"title": "Backend technologies"

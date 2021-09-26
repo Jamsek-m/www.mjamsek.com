@@ -6,7 +6,7 @@ export const KNOWLEDGE: (t: TFunction) => KnowledgeAreas = (t) => [
         title: t("index:learn-more.knowledge.technologies.backend.title"),
         items: [
             {
-                title: "Java EE",
+                title: "Java/JakartaEE",
                 emphasized: true
             },
             {
@@ -28,7 +28,7 @@ export const KNOWLEDGE: (t: TFunction) => KnowledgeAreas = (t) => [
                 title: "React"
             },
             {
-                title: "GatsbyJs"
+                title: "GatsbyJS"
             },
             {
                 title: "Typescript"
