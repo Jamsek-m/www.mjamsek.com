@@ -8,7 +8,7 @@ import {
     avatar,
     description,
 } from "./about-me.module.scss";
-import avatarImage from "../../../../assets/images/avatar.png";
+import avatarImage from "../../../../assets/images/avatar-circle.png";
 
 interface AboutMeProps {
 

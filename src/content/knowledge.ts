@@ -13,7 +13,7 @@ export const KNOWLEDGE: (t: TFunction) => KnowledgeAreas = (t) => [
                 title: "Node.js"
             },
             {
-                title: "Docker"
+                title: "Docker & Docker Compose"
             }
         ]
     },
@@ -46,9 +46,6 @@ export const KNOWLEDGE: (t: TFunction) => KnowledgeAreas = (t) => [
     {
         title: t("index:learn-more.knowledge.technologies.other.title"),
         items: [
-            {
-                title: "Docker"
-            },
             {
                 title: "Keycloak"
             },
