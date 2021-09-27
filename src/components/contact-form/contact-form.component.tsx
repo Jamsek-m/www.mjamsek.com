@@ -54,6 +54,7 @@ export const ContactForm = (_: ContactFormProps) => {
             setResultType("sent");
             setContact(contact.reset());
         } catch (err) {
+            console.error(err);
             setResultType("error");
             console.error(err);
         } finally {

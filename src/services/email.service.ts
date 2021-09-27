@@ -25,12 +25,10 @@ export class EmailService {
             headers,
             body: this.encodeFormData(payload)
         });
-        
-        try {
-            await fetch(request);
-        } catch (err) {
-            console.error(err);
-            throw err;
+    
+        const response = await fetch(request);
+        if (response.status >= 400) {
+            throw new Error("Error sending email!");
         }
     }
     
