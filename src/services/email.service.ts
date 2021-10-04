@@ -32,12 +32,10 @@ export class EmailService {
         }
     }
     
-    private encodeFormData(payload: EmailPayload): FormData {
-        const formData = new FormData();
-        Object.keys(payload).forEach(key => {
-            formData.set(key, (payload as any)[key]);
-        });
-        return formData;
+    private encodeFormData(payload: EmailPayload): string {
+        return Object.keys(payload)
+            .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent((payload as any)[key]))
+            .join("&");
     }
     
 }
