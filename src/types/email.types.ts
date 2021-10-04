@@ -27,31 +27,33 @@ export class ContactFormData {
     public name: FormItem;
     public email: FormItem;
     public message: FormItem;
+    public "form-name": string;
     
-    public static empty(): ContactFormData {
-        return new ContactFormData();
+    public static empty(formName: string): ContactFormData {
+        return new ContactFormData(formName);
     }
     
     public static deepClone(data: ContactFormData): ContactFormData {
-        const copy = new ContactFormData();
+        const copy = new ContactFormData(data["form-name"]);
         copy.name = FormItem.deepClone(data.name);
         copy.email = FormItem.deepClone(data.email);
         copy.message = FormItem.deepClone(data.message);
         return copy;
     }
     
-    public constructor() {
+    public constructor(formName: string) {
         this.name = new FormItem();
         this.email = new FormItem();
         this.message = new FormItem();
+        this["form-name"] = formName;
     }
     
     public reset(): ContactFormData {
-        return ContactFormData.empty();
+        return ContactFormData.empty(this["form-name"]);
     }
     
     public resetErrors() {
-        const data = new ContactFormData();
+        const data = new ContactFormData(this["form-name"]);
         data.name = new FormItem(this.name.value);
         data.email = new FormItem(this.email.value);
         data.message = new FormItem(this.message.value);
@@ -62,7 +64,8 @@ export class ContactFormData {
         return {
             name: this.name.value,
             email: this.email.value,
-            message: this.message.value
+            message: this.message.value,
+            "form-name": this["form-name"],
         };
     }
 }

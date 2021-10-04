@@ -30,11 +30,13 @@ interface ContactFormProps {
 
 type SendResultType = null | "sent" | "error";
 
+const FORM_NAME = "contact-form";
+
 export const ContactForm = (_: ContactFormProps) => {
     const { t } = useTranslation();
     const emailService = EmailService.getInstance();
     
-    const [contact, setContact] = useState<ContactFormData>(new ContactFormData());
+    const [contact, setContact] = useState<ContactFormData>(new ContactFormData(FORM_NAME));
     const [sending, setSending] = useState<boolean>(false);
     const [resultType, setResultType] = useState<SendResultType>(null);
     
@@ -66,13 +68,13 @@ export const ContactForm = (_: ContactFormProps) => {
         <AnchoredSection id={AnchorableSection.CONTACT} className={container}>
             <h2 className={title}>{t("common:footer.contact.title")}</h2>
             
-            <form name="contact-form"
+            <form name={FORM_NAME}
                 data-netlify="true"
                 data-netlify-honeypot="itsatrap"
                 onSubmit={sendEmail}
                 className={form}
             >
-                <input type="hidden" name="form-name" value="contact-form"/>
+                <input type="hidden" name="form-name" value={FORM_NAME}/>
                 <input type="hidden" name="itsatrap"/>
                 
                 <div className={nameSection}>
