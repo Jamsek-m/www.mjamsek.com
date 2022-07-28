@@ -1,7 +1,7 @@
 {
     "id": "prog-utils-ts",
     "position": 25,
-    "path": "/prog-utils-ts",
+    "path": "/prog-lib-ts",
     "title": "projects:projects.prog-utils-ts.name",
     "description": "projects:projects.prog-utils-ts.description",
     "fullDescription": "projects:projects.prog-utils-ts.full-description",
@@ -16,7 +16,7 @@
     "license": "MIT",
     "repository": {
         "provider": "github",
-        "url": "ts-prog-utils"
+        "url": "prog-lib-ts"
     },
     "distribution": {
         "type": "link",
