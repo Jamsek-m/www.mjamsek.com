@@ -46,7 +46,7 @@
     width: 100%;
   }
   @include hover-only {
-    $hover-color: $shadow_color_blue;
+    $hover-color: $primary-color;
 
     border: 1px solid $hover-color;
     .link-elem {
