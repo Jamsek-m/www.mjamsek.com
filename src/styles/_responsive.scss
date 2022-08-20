@@ -11,6 +11,14 @@ $pc: '(min-width: 961px)';
 
 @mixin device-specific($device) {
   @media only screen and #{$device} {
-    @content
+    @content;
+  }
+}
+
+@mixin hover-only() {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
   }
 }
